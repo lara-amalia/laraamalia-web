@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "eleventy --input=src && npm run sass:build",
-    "dev": "NODE_ENV=development concurrently 'eleventy --input=src --serve' 'npm run sass:watch'",
+    "dev": "BASE_URL=http://localhost:8080 concurrently 'eleventy --input=src --serve' 'npm run sass:watch'",
     "sass:build": "node-sass --output  _site/styles/ src/styles/main.scss",
     "sass:watch": "npm run sass:build && npm run sass:build -- -w"
   },

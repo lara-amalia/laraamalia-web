@@ -1,9 +1,6 @@
 module.exports = {
   buildTime: new Date(),
-  baseUrl:
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:8080"
-      : "https://www.laraamalia.at",
+  baseUrl: process.env.BASE_URL || "https://www.laraamalia.at",
   name: "Lara Amalia",
   twitter: "@lara_amalia",
   en: {
