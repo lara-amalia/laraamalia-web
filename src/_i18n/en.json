@@ -1,0 +1,182 @@
+{
+	"common": {
+		"goToWebsite": "Open website in a new tab",
+		"homeLink": "&laquo; back home",
+		"more": "more…",
+		"projectLink": "visit website"
+	},
+	"index": {
+		"contact": {
+			"header": "Wanna chat with me?",
+			"text": "You can find me in Linz, <a href=\"https://twitter.com/lara_amalia\" target=\"_blank\" rel=\"noopener noreferrer\">on Twitter</a> or you can just write me an email at <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>."
+		},
+		"greeting": "Hello, I am<br>Lara Amalia",
+		"meta": {
+			"description": "Hello, my name is Lara Amalia. I’m a web developer by day and a musician by night.",
+			"title": "Lara Amalia. Web developer & musician."
+		},
+		"misc": {
+			"cat": "I have a cat called Gandalf (the white).",
+			"maryHarry": "I like Mary Poppins and Harry Potter, the books as well as the movies.",
+			"running": "When I feel like freeing up my mind, I enjoy going for a run.",
+			"sea": "My favourite colour is blue, maybe that’s because I’m in love with the sea."
+		},
+		"music": {
+			"header": "…and a musician<br />by night.",
+			"headerLink": "gigs &raquo;",
+			"intro": {
+				"header": "musician",
+				"text1": "I started singing when I was a small child. I have been playing the violin since I was five years old. Later I learned to play the piano. Recently I started taking cello lessons.<br/>\nI love it.",
+				"text2": "As a singer/songwriter I write songs in Upper Austrian dialect. I’m also a singer in a vocal ensemble called"
+			},
+			"nav": {
+				"concerts": "concerts",
+				"projects": "studio projects"
+			},
+			"subHeader": "my life has always been full of music and will always be"
+		},
+		"web": {
+			"header": "I’m a web developer<br />by day…",
+			"headerLink": "portfolio &raquo;",
+			"intro": {
+				"header": "web developer",
+				"text1": "I built my first websites with table layouts and framesets and using image maps for site navigation.",
+				"text2": "Since then I have learned a lot. I studied Media Technology and Design (FH Hagenberg) and Computer Science (JKU Linz)."
+			},
+			"nav": {
+				"cv": "cv",
+				"projects": "projects"
+			},
+			"subHeader": "When I was 12 years old I read a book about HTML and started building websites"
+		}
+	},
+	"music": {
+		"contact": {
+			"header": "Contact & Booking",
+			"text1": "I love to sing and to play the piano as well as the violin.\nLet me know if you want to make some music together or if you want me to play at your next event. Contact me at <a href=\"mailto:booking@laraamalia.at\">booking@laraamalia.at</a>.",
+			"text2": "You can also find me on <a href=\"https://www.facebook.com/LaraAmaliaMusic/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook</a>, <a href=\"https://www.instagram.com/laraamaliamusic/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a> and <a href=\"https://www.youtube.com/channel/UCUxZSiFxcTyBCtXJA7wX12g\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>.",
+			"text3": "I’m a singer in a vocal ensemble called <a href=\"https://www.anderschor.at\" target=\"_blank\" rel=\"noopener noreferrer\">anders_chor</a>.\nWe like to sing together. Maybe at your next event?"
+		},
+		"imgAlt": "Lara Amalia with violin",
+		"meta": {
+			"description": "Lara Amalia. Upcoming and past concerts and booking information.",
+			"title": "Music. Lara Amalia."
+		},
+		"past": {
+			"header": "Past gigs",
+			"summary": "And various concerts with the bands “Geranium Kiss” (Linz), “Rosa Braille OHRchester” (Linz), “Blue Funk” (LMS Gallneukirchen)…"
+		},
+		"projects": {
+			"meta": {
+				"description": "Listen to some of my music projects.",
+				"title": "Studio projects"
+			},
+			"ninesongs": "Backing vocals, violin",
+			"pro4": "Semester project at FH Hagenberg together with Penélope Beatbox",
+			"ttml": "Vocals, piano, violin, composition"
+		},
+		"title": "Music",
+		"upcoming": {
+			"header": "Upcoming gigs"
+		}
+	},
+	"web": {
+		"cv": {
+			"education": "Education",
+			"entries": {
+				"atikon": {
+					"company": "Atikon, Leonding",
+					"position": "Web developer (internship)",
+					"time": "March 2013 - June 2013"
+				},
+				"dynatrace": {
+					"company": "Dynatrace Austria, Linz",
+					"position": "Web developer, Design operations",
+					"time": "September 2016 - March 2020"
+				},
+				"fh": {
+					"company": "University of Applied Sciences, Campus Hagenberg\n(FH Hagenberg)",
+					"position": "Lecturer (Webdesign & -programming)",
+					"time": "September 2018 - now"
+				},
+				"holis": {
+					"company": "holis market, Linz",
+					"position": "Web developer",
+					"time": "February 2015 - January 2016"
+				},
+				"nachhilfe": {
+					"company": "IFL Linz, FH Hagenberg",
+					"position": "Mathematics tutoring",
+					"time": "August 2009 - February 2013"
+				},
+				"self": {
+					"company": "self-employed",
+					"position": "Web developer",
+					"time": "February 2015 - now"
+				},
+				"studies": {
+					"mtd": "Media Technology and Design"
+				}
+			},
+			"jobs": "Jobs",
+			"meta": {
+				"description": "A list of jobs I did in the past years.",
+				"title": "CV"
+			}
+		},
+		"portfolio": {
+			"contact": "Are you interested in my work or do you have a project idea you want to discuss? I’d be happy to hear from you!<br />\nJust say hi: <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>",
+			"contactHeader": "let’s work together!",
+			"intro": "I like designing and building <strong>things for the web</strong>. I'm interested in <strong>modern web technologies</strong> and also have a good feel for <strong>UI and UX</strong>. I pay attention to detail while always having the bigger picture in mind. When I'm creating websites or apps, logical content structures, clean and responsive design, accessibility, and performance play an important role to me.",
+			"meta": {
+				"description": "Browse through some of my web projects I designed and implemented in the past years.",
+				"title": "Portfolio. Lara Amalia."
+			},
+			"projects": {
+				"feldenkraispraxis": {
+					"description": "concept, design & implementation, photography",
+					"link": "https://www.feldenkraispraxis.at/",
+					"technology": "static website (Next.js)",
+					"time": "2019/20",
+					"title": "Feldenkraispraxis"
+				},
+				"fuchzehnowe": {
+					"description": "app used to track all player's scores during a “fuchzehn owe” game | still work in progress",
+					"link": "https://fuchzehnowe.web.app/",
+					"technology": "React, Firestore",
+					"time": "2019/20",
+					"title": "fuchzehn owe"
+				},
+				"happyeating": {
+					"description": "concept, implementation",
+					"link": "http://happy-eating.at/",
+					"technology": "WordPress",
+					"time": "2016/17",
+					"title": "happy eating"
+				},
+				"pfusterer": {
+					"description": "implementation",
+					"link": "http://pfusterer.at/",
+					"technology": "WordPress",
+					"time": "2016",
+					"title": "design architektur pfusterer"
+				},
+				"play": {
+					"description": "concept, design & implementation",
+					"link": "http://www.play-orchester.at/",
+					"technology": "static website (Metalsmith)",
+					"time": "2014 - 2017",
+					"title": "PLAY Orchester"
+				},
+				"timesloth": {
+					"description": "design & implementation, product-illustrations",
+					"link": "https://www.timesloth.io/",
+					"technology": "static website (Next.js), Sketch",
+					"time": "2019/20",
+					"title": "TimeSloth"
+				}
+			},
+			"title": "Portfolio"
+		}
+	}
+}
