@@ -1,0 +1,30 @@
+{
+  "contact": {
+    "header": "Kontakt & Booking",
+    "text1": "Ich liebe es, zu singen und Geige und Klavier zu spielen.\nLass mich wissen, wenn du mit mir Musik machen möchtest, oder ich bei deinem Event spielen soll. Kontaktiere mich einfach unter <a href=\"mailto:booking@laraamalia.at\">booking@laraamalia.at</a>.",
+    "text2": "Du findest mich auch auf <a href=\"https://www.facebook.com/LaraAmaliaMusic/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook</a>, <a href=\"https://www.instagram.com/laraamaliamusic/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a> und <a href=\"https://www.youtube.com/channel/UCUxZSiFxcTyBCtXJA7wX12g\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>.",
+    "text3": "Ich bin Sängerin in einem Vokalensemble namens <a href=\"https://www.anderschor.at\" target=\"_blank\" rel=\"noopener noreferrer\">anders_chor</a>.\nWir singen gerne gemeinsam. Vielleicht auf deinem nächsten Event?"
+  },
+  "imgAlt": "Lara Amalia mit Violine",
+  "meta": {
+    "description": "Lara Amalia. Anstehende und vergangene Konzerte sowie Booking-Informationen.",
+    "title": "Musik. Lara Amalia."
+  },
+  "past": {
+    "header": "Vergangene Auftritte",
+    "summary": "Und weitere Konzerte mit den Bands „Geranium Kiss“ (Linz), „Rosa Braille OHRchester“ (Linz), „Blue Funk“ (LMS Gallneukirchen)…"
+  },
+  "projects": {
+    "meta": {
+      "description": "Höre dir ein paar meiner vergangenen musikalischen Projekte an.",
+      "title": "Studioprojekte"
+    },
+    "ninesongs": "Background Vocals, Violine",
+    "pro4": "Semesterprojekt an der FH Hagenberg gemeinsam mit Penélope Beatbox",
+    "ttml": "Vocals, Klavier, Violine, Komposition"
+  },
+  "title": "Musik",
+  "upcoming": {
+    "header": "Anstehende Auftritte"
+  }
+}

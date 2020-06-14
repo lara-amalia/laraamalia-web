@@ -1,0 +1,13 @@
+<header class="page-header">
+  <h1 class="page-title">
+    {{ pageTitle | safe }}<span class="text-colored" aria-hidden="true">.</span>
+  </h1>
+  {%  if homeNav %}
+  <nav class="home-nav">
+    <a href="{{ site.baseUrl }}" class="home-link">{{ common[locale].homeLink | safe }}</a>
+  </nav>
+  {% endif %}
+  <nav class="language-nav">
+    {#  TODO: add language nav  #}
+  </nav>
+</header>

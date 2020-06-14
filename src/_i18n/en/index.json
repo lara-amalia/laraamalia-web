@@ -1,0 +1,45 @@
+{
+  "contact": {
+    "header": "Wanna chat with me?",
+    "text": "You can find me in Linz, <a href=\"https://twitter.com/lara_amalia\" target=\"_blank\" rel=\"noopener noreferrer\">on Twitter</a> or you can just write me an email at <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>."
+  },
+  "greeting": "Hello, I am<br />Lara Amalia",
+  "meta": {
+    "description": "Hello, my name is Lara Amalia. I’m a web developer by day and a musician by night.",
+    "title": "Lara Amalia. Web developer & musician."
+  },
+  "misc": {
+    "cat": "I have a cat called Gandalf (the white).",
+    "maryHarry": "I like Mary Poppins and Harry Potter, the books as well as the movies.",
+    "running": "When I feel like freeing up my mind, I enjoy going for a run.",
+    "sea": "My favourite colour is blue, maybe that’s because I’m in love with the sea."
+  },
+  "music": {
+    "header": "…and a musician<br />by night.",
+    "headerLink": "gigs &raquo;",
+    "intro": {
+      "header": "musician",
+      "text1": "I started singing when I was a small child. I have been playing the violin since I was five years old. Later I learned to play the piano. Recently I started taking cello lessons.<br/>\nI love it.",
+      "text2": "As a singer/songwriter I write songs in Upper Austrian dialect. I’m also a singer in a vocal ensemble called"
+    },
+    "nav": {
+      "concerts": "concerts",
+      "projects": "studio projects"
+    },
+    "subHeader": "my life has always been full of music and will always be"
+  },
+  "web": {
+    "header": "I’m a web developer<br />by day…",
+    "headerLink": "portfolio &raquo;",
+    "intro": {
+      "header": "web developer",
+      "text1": "I built my first websites with table layouts and framesets and using image maps for site navigation.",
+      "text2": "Since then I have learned a lot. I studied Media Technology and Design (FH Hagenberg) and Computer Science (JKU Linz)."
+    },
+    "nav": {
+      "cv": "cv",
+      "projects": "projects"
+    },
+    "subHeader": "When I was 12 years old I read a book about HTML and started building websites"
+  }
+}

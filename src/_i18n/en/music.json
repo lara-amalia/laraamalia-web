@@ -1,0 +1,30 @@
+{
+  "contact": {
+    "header": "Contact & Booking",
+    "text1": "I love to sing and to play the piano as well as the violin.\nLet me know if you want to make some music together or if you want me to play at your next event. Contact me at <a href=\"mailto:booking@laraamalia.at\">booking@laraamalia.at</a>.",
+    "text2": "You can also find me on <a href=\"https://www.facebook.com/LaraAmaliaMusic/\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook</a>, <a href=\"https://www.instagram.com/laraamaliamusic/\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram</a> and <a href=\"https://www.youtube.com/channel/UCUxZSiFxcTyBCtXJA7wX12g\" target=\"_blank\" rel=\"noopener noreferrer\">YouTube</a>.",
+    "text3": "I’m a singer in a vocal ensemble called <a href=\"https://www.anderschor.at\" target=\"_blank\" rel=\"noopener noreferrer\">anders_chor</a>.\nWe like to sing together. Maybe at your next event?"
+  },
+  "imgAlt": "Lara Amalia with violin",
+  "meta": {
+    "description": "Lara Amalia. Upcoming and past concerts and booking information.",
+    "title": "Music. Lara Amalia."
+  },
+  "past": {
+    "header": "Past gigs",
+    "summary": "And various concerts with the bands “Geranium Kiss” (Linz), “Rosa Braille OHRchester” (Linz), “Blue Funk” (LMS Gallneukirchen)…"
+  },
+  "projects": {
+    "meta": {
+      "description": "Listen to some of my music projects.",
+      "title": "Studio projects"
+    },
+    "ninesongs": "Backing vocals, violin",
+    "pro4": "Semester project at FH Hagenberg together with Penélope Beatbox",
+    "ttml": "Vocals, piano, violin, composition"
+  },
+  "title": "Music",
+  "upcoming": {
+    "header": "Upcoming gigs"
+  }
+}

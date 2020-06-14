@@ -1,0 +1,40 @@
+.web-header {
+  background-color: $main-color;
+  color: #ffffff;
+}
+
+.music-header {
+  background: center / cover no-repeat url('../assets/images/lara-music.jpg');
+  text-align: right;
+}
+
+.web-header,
+.music-header {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.web-header .nav-link,
+.music-header .nav-link {
+  background-color: #ffffff;
+  color: #303030;
+  padding: 2px 4px;
+  font-weight: 400;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.music-header-text {
+  background-color: $main-color-light;
+}
+
+@media (min-width: $screen-lg) {
+  .music-header-text {
+    background-color: transparent;
+  }
+}

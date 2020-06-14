@@ -1,0 +1,45 @@
+{
+  "contact": {
+    "header": "Wollen wir plaudern?",
+    "text": "Du findest mich in Linz, <a href=\"https://twitter.com/lara_amalia\" target=\"_blank\" rel=\"noopener noreferrer\">auf Twitter</a> oder schick mir einfach ein E-Mail an <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>."
+  },
+  "greeting": "Hallo, ich bin<br />Lara Amalia",
+  "meta": {
+    "description": "Hallo, ich bin Lara Amalia. Ich bin Web Entwicklerin am Tag und Musikerin bei Nacht.",
+    "title": "Lara Amalia. Web Entwicklerin & Musikerin."
+  },
+  "misc": {
+    "cat": "Ich habe eine Katze namens Gandalf (der Weiße).",
+    "maryHarry": "Ich mag Mary Poppins und Harry Potter, sowohl die Bücher als auch die Filme.",
+    "running": "Um meinen Kopf frei zu bekommen, laufe ich gerne mal eine Runde.",
+    "sea": "Meine Lieblingsfarbe ist blau, vielleicht deswegen, weil ich ins Meer verliebt bin."
+  },
+  "music": {
+    "header": "…und Musikerin<br />bei Nacht.",
+    "headerLink": "auftritte &raquo;",
+    "intro": {
+      "header": "musikerin",
+      "text1": "Als kleines Kind habe ich bereits zu singen begonnen. Seit ich fünf Jahre alt bin, spiele ich Geige. Später lernte ich Klavier. Vor kurzem habe ich mit Cello-Unterricht begonnen.<br/>\nIch liebe es.",
+      "text2": "Als Singer/Songwriter schreibe ich im oberösterreichischen Dialekt. Ich singe auch in einem Vokalensemble namens"
+    },
+    "nav": {
+      "concerts": "konzerte",
+      "projects": "studioprojekte"
+    },
+    "subHeader": "mein leben war immer voll von musik und das wird auch so bleiben"
+  },
+  "web": {
+    "header": "Ich bin Web Entwicklerin<br />am Tag…",
+    "headerLink": "portfolio &raquo;",
+    "intro": {
+      "header": "web entwicklerin",
+      "text1": "Meine ersten Websites habe ich mit Tabellen-Layouts und Framesets gebaut. Als Navigation gab es Image Maps.",
+      "text2": "Seither habe ich viel gelernt. Ich habe Medientechnik & -design (FH Hagenberg) und Computer Science (JKU Linz) studiert."
+    },
+    "nav": {
+      "cv": "lebenslauf",
+      "projects": "projekte"
+    },
+    "subHeader": "Mit 12 Jahren habe ich ein Buch über HTML gelesen und angefangen Websites zu bauen"
+  }
+}

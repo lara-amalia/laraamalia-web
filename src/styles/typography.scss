@@ -1,0 +1,15 @@
+.text-colored {
+  color: $main-color;
+}
+
+.subheader {
+  font-family: $sans-serif-font;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (min-width: $screen-md) {
+  .subheader {
+    font-size: 1.3rem;
+  }
+}

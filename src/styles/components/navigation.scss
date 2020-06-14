@@ -1,0 +1,142 @@
+/* General Nav Styles */
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.project-link,
+.inpage-nav {
+  font-family: Barlow, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.project-link,
+.inpage-nav .nav-link {
+  color: #ffffff;
+  background-color: #2d5056;
+  margin-bottom: 12px;
+  padding: 0 4px;
+  display: inline-block;
+}
+
+.project-link:hover,
+.inpage-nav .nav-link:hover {
+  background-color: $main-color;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home-nav {
+  display: block;
+  text-align: center;
+}
+
+.home-link {
+  padding: 2px 4px;
+  background-color: $main-color;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+}
+
+/* Language navigation */
+
+.language-nav {
+  font-family: $sans-serif-font;
+  margin-top: 1rem;
+}
+
+.language-nav span {
+  text-decoration: underline;
+}
+
+.language-nav a {
+  text-decoration: none;
+  color: #303030;
+}
+
+/* Social links */
+
+.social-link {
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffffff;
+  color: $text-color;
+  border-radius: 50%;
+  text-decoration: none;
+
+  svg {
+    fill: $main-color;
+    width: 52px;
+    height: 52px;
+    transition: fill 150ms ease-out;
+  }
+}
+
+.social-link + .social-link {
+  margin-left: 12px;
+}
+
+.social-link:hover svg {
+  fill: $main-color-dark;
+}
+
+.social-link-github,
+.social-link-facebook {
+  background-color: $main-color;
+  position: relative;
+  transition: background-color 150ms ease-out;
+
+  svg {
+    fill: #ffffff;
+  }
+}
+
+.social-link-github svg {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 54px;
+  height: 53px;
+}
+
+.social-link-github:hover,
+.social-link-facebook:hover {
+  background-color: $main-color-dark;
+
+  svg {
+    fill: #ffffff;
+  }
+}
+
+.social-link-youtube svg {
+  width: 38px;
+}
+
+.social-link-instagram svg {
+  width: 36px;
+}
+
+.web-social,
+.music-social {
+  margin-top: 3rem;
+  display: flex;
+}
+
+@media (min-width: $screen-md) {
+  .web-social,
+  .music-social {
+    margin-top: 0;
+  }
+}

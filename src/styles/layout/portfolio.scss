@@ -1,0 +1,269 @@
+.project {
+  margin-top: 3rem;
+  position: static;
+  font-size: 0.9rem;
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.project-img-wrapper {
+  padding: 1rem;
+
+  img {
+    display: block;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+  }
+}
+
+.project-technology {
+  font-weight: 700;
+}
+
+.portfolio-contact {
+  margin-top: 3rem;
+}
+
+.portfolio-contact-subheader {
+  display: block;
+  max-width: 80px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: $screen-md) {
+
+  .portfolio-contact {
+    margin-top: 6rem;
+  }
+
+  .portfolio-contact-subheader {
+    max-width: 120px;
+  }
+
+  .project-img {
+    margin-top: 2rem;
+    position: relative;
+    z-index: 5;
+  }
+
+  .portfolio-grid {
+    margin-top: 3rem;
+    grid-template-rows: repeat(18, 180px) 100px;
+
+    .text-section {
+      padding: 0;
+    }
+  }
+
+  .project-timesloth {
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 3;
+    padding-right: 1rem;
+  }
+
+  .project-timesloth-img {
+    grid-column: 5 / span 4;
+  }
+
+  .project-feldenkraispraxis {
+    grid-column: 5 / span 3;
+    grid-row: 4 / span 3;
+    padding-left: 1rem;
+  }
+
+  .project-feldenkraispraxis-img {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+  }
+
+  .project-fuchzehnowe {
+    grid-column: 2 / span 3;
+    grid-row: 7 / span 3;
+    padding-right: 1rem;
+  }
+
+  .project-fuchzehnowe-img {
+    grid-column: 5 / span 4;
+    grid-row: 7;
+  }
+
+  .project-play {
+    grid-column: 5 / span 3;
+    grid-row: 11 / span 3;
+    padding-left: 1rem;
+  }
+
+  .project-play-img {
+    grid-column: 1 / span 4;
+    grid-row: 11;
+  }
+
+  .project-happyeating {
+    grid-column: 2 / span 3;
+    grid-row: 14 / span 3;
+    padding-right: 1rem;
+  }
+
+  .project-happyeating-img {
+    grid-column: 5 / span 4;
+    grid-row: 14;
+  }
+
+  .project-pfusterer {
+    grid-column: 5 / span 3;
+    grid-row: 17 / span 3;
+    padding-left: 1rem;
+  }
+
+  .project-pfusterer-img {
+    grid-column: 1 / span 4;
+    grid-row: 17;
+  }
+
+  .bg-feldenkraispraxis,
+  .bg-play-code,
+  .bg-portfolio-footer {
+    display: none;
+  }
+
+  .bg-timesloth {
+    right: 0;
+    top: 450px;
+    width: 300px;
+    height: 500px;
+  }
+
+  .bg-fowe {
+    width: 60vw;
+    height: 400px;
+    top: 1550px;
+    left: 0;
+  }
+
+  .bg-happy {
+    right: 0;
+    width: 55vw;
+    height: 250px;
+    top: 2800px;
+  }
+
+  .bg-portfolio-footer {
+    display: block;
+    left: 0;
+    height: 130px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .portfolio-contact-subheader {
+    max-width: 120px;
+  }
+
+  .portfolio-grid {
+    margin-top: 3rem;
+    grid-template-rows: repeat(14, 180px);
+  }
+
+  .project-timesloth {
+    grid-column: 2 / span 4;
+  }
+
+  .project-timesloth-img {
+    grid-column: 7 / span 5;
+  }
+
+  .bg-timesloth {
+    width: 52vw;
+    height: 440px;
+    top: 620px;
+  }
+
+  .project-feldenkraispraxis {
+    grid-column: 7 / span 4;
+  }
+
+  .project-feldenkraispraxis-img {
+    grid-column: 2 / span 5;
+  }
+
+  .bg-feldenkraispraxis {
+    display: block;
+    height: 440px;
+    width: 38vw;
+    top: 1160px;
+    left: 0;
+  }
+
+  .project-fuchzehnowe {
+
+  }
+
+  .project-fuchzehnowe-img {
+    grid-column: 5/span 8;
+    grid-row: 8;
+  }
+
+  .bg-fowe {
+    display: none;
+  }
+
+  .bg-play-code {
+    display: block;
+    top: 1670px;
+    height: 130px;
+    right: 0;
+    width: 41vw;
+  }
+
+  .project-play {
+    grid-column: 1 / span 3;
+    grid-row: 13 / span 2;
+    padding-right: 0;
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+
+  .project-play-img {
+    grid-column: 1 / span 4;
+    grid-row: 11;
+    margin-top: 0;
+  }
+
+  .project-happyeating {
+    grid-column: 5 / span 3;
+    grid-row: 13 / span 2;
+    padding-right: 0;
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+
+  .project-happyeating-img {
+    grid-column: 5 / span 4;
+    grid-row: 11;
+    margin-top: 0;
+  }
+
+  .project-pfusterer {
+    grid-column: 9 / span 3;
+    grid-row: 13 / span 2;
+    padding-right: 0;
+    padding-left: 1rem;
+    margin-top: 0;
+  }
+
+  .project-pfusterer-img {
+    grid-column: 9 / span 4;
+    grid-row: 11;
+    margin-top: 0;
+  }
+
+  .bg-happy {
+    display: block;
+    height: 300px;
+    width: 40vw;
+    top: 2350px;
+    left: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.contact-footer {
+  font-family: $sans-serif-font;
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.contact-links {
+  margin-bottom: 8px;
+}
+
+@media (min-width: $screen-md) {
+  .contact-footer {
+    text-align: left;
+  }
+}

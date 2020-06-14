@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="alternate" href="https://www.laraamalia.at{{config.alternateLangRoot}}web" hrefLang="{{config.alternateLang}}"/>
+  <title>{{ title }} | {{ metaTitle }}</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,700"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ site.baseUrl }}/styles/main.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="{{ site.baseUrl }}/favicon.png" sizes="32x32" />
+  <meta name="title" content="{{ metaTitle }}" />
+  <meta name="description" content="{{ metaDescription }}" />
+  <meta name="robots" content="index, follow" />
+  <base href="{{ site.baseUrl }}" />
+</head>
+<body>
+  {{ content | safe }}
+
+  {% block content %}{% endblock %}
+
+</body>
+</html>

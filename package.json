@@ -1,0 +1,20 @@
+{
+  "name": "laraamalia-web",
+  "version": "1.0.0",
+  "description": "Official website of Lara Amalia",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy --input=src && npm run sass:build",
+    "dev": "NODE_ENV=development concurrently 'eleventy --input=src --serve' 'npm run sass:watch'",
+    "sass:build": "node-sass --output  _site/styles/ src/styles/main.scss",
+    "sass:watch": "npm run sass:build && npm run sass:build -- -w"
+  },
+  "author": "Lara Amalia",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "concurrently": "^5.2.0",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5"
+  }
+}
