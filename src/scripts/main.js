@@ -3,6 +3,7 @@
 })();
 
 function sortGigs() {
+  // const upcomingGigsSection = document.getElementById('js-upcoming-gigs-section');
   const gigs = Array.prototype.slice.call(document.querySelectorAll(".js-gig"));
   const now = new Date();
   const nowStr = [
@@ -23,12 +24,13 @@ function sortGigs() {
     return gigDateStr > nowStr;
   });
   // Add upcoming gigs to upcoming list
-  const upcomingGigsList = document.getElementById('upcoming-gigs');
+  const upcomingGigsList = document.querySelector('.js-upcoming-gigs-section ul');
   if (upcomingGigs.length) {
     upcomingGigs.forEach(function(gig) {
       upcomingGigsList.prepend(gig);
     });
   } else {
-    upcomingGigsList.parentElement.style.display = 'none';
+    const upcomingGigsSection = document.querySelector('.js-upcoming-gigs-section');
+    upcomingGigsSection.style.display = 'none';
   }
 }
