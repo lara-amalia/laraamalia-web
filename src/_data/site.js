@@ -4,7 +4,7 @@ module.exports = {
   name: "Lara Amalia",
   twitter: "@lara_amalia",
   en: {
-    homePath: "/en",
+    homePath: "/en/",
     metaTitle: "Lara Amalia. Web developer & musician.",
     metaDescription:
       "Hello, my name is Lara Amalia. I’m a web developer by day and a musician by night.",

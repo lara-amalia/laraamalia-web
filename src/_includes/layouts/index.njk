@@ -12,7 +12,7 @@
         <div class="web-header">
           <div>
             <p>{{ index[locale].web.header | safe }}</p>
-            <a href="{{ site.baseUrl }}/web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
+            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
           </div>
           <div class="web-social">
             <a
@@ -40,7 +40,7 @@
         <div class="music-header ">
           <div>
             <span class="music-header-text">{{ index[locale].music.header | safe }}</span><br />
-            <a href="{{ site.baseUrl }}/music" class="nav-link">
+            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link">
               {{ index[locale].music.headerLink | safe }}
             </a>
           </div>
@@ -89,10 +89,10 @@
             <a href="https://www.anderschor.at" target="_blank" rel="noopener noreferrer">anders_chor</a>.
           </p>
           <nav class="inpage-nav">
-            <a href="{{ config.baseUrl }}/music" class="nav-link"
+            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link"
             >{{ index[locale].music.nav.concerts }}</a
             ><br />
-            <a href="{{ config.baseUrl }}/music/projects" class="nav-link"
+            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music/projects" class="nav-link"
             >{{ index[locale].music.nav.projects }}</a
             >
           </nav>
@@ -109,8 +109,8 @@
             {{ index[locale].web.intro.text2 }}
           </p>
           <nav class="inpage-nav">
-            <a href="{{ config.baseUrl }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a><br />
-            <a href="{{ config.baseUrl }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a>
+            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a><br />
+            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a>
           </nav>
         </div>
         <p class="subheader web-subheader">

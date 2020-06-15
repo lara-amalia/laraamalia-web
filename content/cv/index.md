@@ -1,5 +1,5 @@
 ---
 title: Lebenslauf
-layout: layouts/web.njk
+layout: layouts/cv.njk
 homeNav: true
 ---
