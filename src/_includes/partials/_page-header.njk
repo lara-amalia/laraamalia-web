@@ -8,6 +8,6 @@
   </nav>
   {% endif %}
   <nav class="language-nav">
-    {#  TODO: add language nav  #}
+    {{ site[locale].langNav(page.url) | safe }}
   </nav>
 </header>
