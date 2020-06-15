@@ -1,0 +1,85 @@
+{% extends "layouts/base.njk" %}
+
+{% set metaTitle = music[locale].projects.meta.title %}
+{% set metaDescription = music[locale].projects.meta.description %}
+{% set pageTitle = title %}
+
+{% block content %}
+<main class="main">
+  {% include "../partials/_page-header.njk" %}
+  <div class="text-section">
+    <h2>trip down memory lane // Debut // 2010</h2>
+    <p>{{ music[locale].projects.ttml }}</p>
+
+    <h3>Too Late</h3>
+    <audio controls>
+      <source src="../../assets/audio/toolate.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/toolate.mp3">"Too Late"</a>
+    </audio>
+
+    <h3>You are my Soul</h3>
+    <audio controls>
+      <source src="../../assets/audio/soul.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/soul.mp3">"You are my Soul"</a>
+    </audio>
+
+    <h3>Lieder träumen Träume</h3>
+    <audio controls>
+      <source src="../../assets/audio/lieder.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/lieder.mp3">"Lieder träumen Träume"</a>
+    </audio>
+
+    <h3>Melody in my Heart</h3>
+    <audio controls>
+      <source src="../../assets/audio/melody.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/melody.mp3">"Melody in my Heart"</a>
+    </audio>
+  </div>
+
+  <div class="lines lines--left" aria-hidden="true">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="text-section">
+    <h2>Nine Songs // Geranium Kiss // 2009</h2>
+    <p>{{ music[locale].projects.ninesongs }}</p>
+
+    <h3>Second Half</h3>
+    <audio controls>
+      <source src="../../assets/audio/gk_secondhalf.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/gk_secondhalf.mp3">"Second Half"</a>
+    </audio>
+
+    <h3>When I'm Gone</h3>
+    <audio controls>
+      <source src="../../assets/audio/gk_gone.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/gk_gone.mp3">"When I'm Gone"</a>
+    </audio>
+
+    <h3>Where the Old Ravens Fly</h3>
+    <audio controls>
+      <source src="../../assets/audio/gk_ravens.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/gk_ravens.mp3">"Where the Old Ravens Fly"</a>
+    </audio>
+  </div>
+  <div class="lines lines--right" aria-hidden="true">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="text-section">
+    <h2>He Won't Go // a cappella // 2012</h2>
+    <p>{{ music[locale].projects.pro4 }}</p>
+    <h3>He Won't Go (a cappella)</h3>
+    <audio controls>
+      <source src="../../assets/audio/pro4_he_wont_go.mp3" type="audio/mp3" />
+      Download <a href="../../assets/audio/pro4_he_wont_go.mp3">"He Won't Go (a cappella)"</a>
+    </audio>
+  </div>
+</main>
+{% endblock %}
