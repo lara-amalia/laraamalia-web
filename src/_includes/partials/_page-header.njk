@@ -7,7 +7,13 @@
     <a href="{{ site[locale].homePath }}" class="home-link">{{ common[locale].homeLink | safe }}</a>
   </nav>
   {% endif %}
-  <nav class="language-nav">
-    {{ site[locale].langNav(page.url) | safe }}
-  </nav>
+  {% if  excludeLanguageNav %}
+    <div class="language-nav language-nav--no">
+      <span class="no">DE</span> / <span>EN</span>
+    </div>
+  {% else %}
+    <nav class="language-nav">
+      {{ site[locale].langNav(page.url) | safe }}
+    </nav>
+  {% endif %}
 </header>

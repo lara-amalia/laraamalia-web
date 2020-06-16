@@ -63,6 +63,15 @@
   color: #303030;
 }
 
+.language-nav--no span {
+  text-decoration: none;
+
+  &.no {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+}
+
 /* Social links */
 
 .social-link {
