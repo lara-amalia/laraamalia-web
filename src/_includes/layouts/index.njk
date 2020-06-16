@@ -9,7 +9,7 @@
   <div class="web-header">
     <div>
       <p>{{ index[locale].web.header | safe }}</p>
-      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
+      <a href="{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
     </div>
     <div class="web-social">
       <a
@@ -37,7 +37,7 @@
   <div class="music-header ">
     <div>
       <span class="music-header-text">{{ index[locale].music.header | safe }}</span><br />
-      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link">
+      <a href="{{ site[locale].homePath }}music" class="nav-link">
         {{ index[locale].music.headerLink | safe }}
       </a>
     </div>
@@ -86,10 +86,10 @@
       <a href="https://www.anderschor.at" target="_blank" rel="noopener noreferrer">anders_chor</a>.
     </p>
     <nav class="inpage-nav">
-      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link"
+      <a href="{{ site[locale].homePath }}music" class="nav-link"
       >{{ index[locale].music.nav.concerts }}</a
       ><br />
-      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music/projects" class="nav-link"
+      <a href="{{ site[locale].homePath }}music/projects" class="nav-link"
       >{{ index[locale].music.nav.projects }}</a
       >
     </nav>
@@ -106,8 +106,8 @@
       {{ index[locale].web.intro.text2 }}
     </p>
     <nav class="inpage-nav">
-      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a><br />
-      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a>
+      <a href="{{ site[locale].homePath }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a><br />
+      <a href="{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a>
     </nav>
   </div>
   <p class="subheader web-subheader">
@@ -115,13 +115,13 @@
   </p>
   <div class="bg-blue-base bg-blue-ingrid" aria-hidden="true"></div>
   <img
-    src="./assets/images/lara-smile.jpg"
+    src="/assets/images/lara-smile.jpg"
     srcset="
-      ./assets/images/lara-smile-400.jpg   400w,
-      ./assets/images/lara-smile.jpg       630w,
-      ./assets/images/lara-smile-800.jpg   800w,
-      ./assets/images/lara-smile-1000.jpg 1000w,
-      ./assets/images/lara-smile-1200.jpg 1200w"
+      /assets/images/lara-smile-400.jpg   400w,
+      /assets/images/lara-smile.jpg       630w,
+      /assets/images/lara-smile-800.jpg   800w,
+      /assets/images/lara-smile-1000.jpg 1000w,
+      /assets/images/lara-smile-1200.jpg 1200w"
       sizes="(min-width: 700px) 50vw, (min-width: 1080px) 630px, 100vw"
       alt="Lara Amalia"
       class="img-lara-smile"

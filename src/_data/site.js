@@ -1,6 +1,11 @@
+const baseUrl =
+  process.env.CONTEXT === "production"
+    ? process.env.URL || "https://www.laraamalia.at"
+    : process.env.BASE_URL || process.env.DEPLOY_URL;
+
 module.exports = {
   buildTime: new Date(),
-  baseUrl: process.env.BASE_URL || "https://www.laraamalia.at",
+  baseUrl,
   name: "Lara Amalia",
   twitter: "@lara_amalia",
   en: {
@@ -8,7 +13,8 @@ module.exports = {
     alternateLangPathPrefix: "",
     alternateLang: "de",
     basePath: (path) => `${path.substring(3)}`,
-    langNav: (path) => `<a href="${path.substring(3)}">DE</a> / <span>EN</span>`,
+    langNav: (path) =>
+      `<a href="${path.substring(3)}">DE</a> / <span>EN</span>`,
     metaTitle: "Lara Amalia. Web developer & musician.",
     metaDescription:
       "Hello, my name is Lara Amalia. I’m a web developer by day and a musician by night.",
