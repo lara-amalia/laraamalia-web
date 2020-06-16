@@ -5,166 +5,161 @@
 {% set pageTitle = index[locale].greeting %}
 
 {% block content %}
-  <div class="outer-container">
-    <main class="main">
-      {% include "../partials/_page-header.njk" %}
-      <div class="grid-base index-grid">
-        <div class="web-header">
-          <div>
-            <p>{{ index[locale].web.header | safe }}</p>
-            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
-          </div>
-          <div class="web-social">
-            <a
-              href="https://twitter.com/lara_amalia"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link"
-              title="lara_amalia on Twitter"
-              aria-label="lara_amalia on Twitter"
-            >
-              {% include "../partials/icons/_twitter-icon.njk" %}
-            </a>
-            <a
-              href="https://github.com/lara-amalia"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link social-link-github"
-              title="lara-amalia on GitHub"
-              aria-label="lara-amalia on GitHub"
-            >
-              {% include "../partials/icons/_github-icon.njk" %}
-            </a>
-          </div>
-        </div>
-        <div class="music-header ">
-          <div>
-            <span class="music-header-text">{{ index[locale].music.header | safe }}</span><br />
-            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link">
-              {{ index[locale].music.headerLink | safe }}
-            </a>
-          </div>
-          <div class="web-social">
-            <a
-              href="https://www.youtube.com/channel/UCUxZSiFxcTyBCtXJA7wX12g"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link social-link-youtube"
-              title="LaraAmaliaMusic on YouTube"
-              aria-label="LaraAmaliaMusic on YouTube"
-            >
-              {% include "../partials/icons/_youtube-icon.njk" %}
-            </a>
-            <a
-              href="https://www.facebook.com/LaraAmaliaMusic/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link social-link-facebook"
-              title="LaraAmaliaMusic on Facebook"
-              aria-label="LaraAmaliaMusic on Facebook"
-            >
-              {% include "../partials/icons/_facebook-icon.njk" %}
-            </a>
-            <a
-              href="https://www.instagram.com/laraamaliamusic/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="social-link social-link-instagram"
-              title="LaraAmaliaMusic on Instagram"
-              aria-label="LaraAmaliaMusic on Instagram"
-            >
-              {% include "../partials/icons/_instagram-icon.njk" %}
-            </a>
-          </div>
-        </div>
-        <div class="intro music-intro">
-          <h2>
-            {{ index[locale].music.intro.header }}<span class="text-colored" aria-hidden="true">.</span>
-          </h2>
-          <p>
-            {{ index[locale].music.intro.text1 | safe }}
-          </p>
-          <p>
-            {{ index[locale].music.intro.text2 }}
-            <a href="https://www.anderschor.at" target="_blank" rel="noopener noreferrer">anders_chor</a>.
-          </p>
-          <nav class="inpage-nav">
-            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link"
-            >{{ index[locale].music.nav.concerts }}</a
-            ><br />
-            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music/projects" class="nav-link"
-            >{{ index[locale].music.nav.projects }}</a
-            >
-          </nav>
-        </div>
-        <p class="subheader music-subheader">
-          {{ index[locale].music.subHeader }}<span class="text-colored" aria-hidden="true">.</span>
-        </p>
-        <div class="intro web-intro">
-          <h2>{{ index[locale].web.intro.header }}.</h2>
-          <p>
-            {{ index[locale].web.intro.text1 }}
-          </p>
-          <p>
-            {{ index[locale].web.intro.text2 }}
-          </p>
-          <nav class="inpage-nav">
-            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a><br />
-            <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a>
-          </nav>
-        </div>
-        <p class="subheader web-subheader">
-          {{ index[locale].web.subHeader }}<span class="text-colored" aria-hidden="true">.</span>
-        </p>
-        <div class="bg-blue-base bg-blue-ingrid" aria-hidden="true"></div>
-        <img
-          src="./assets/images/lara-smile.jpg"
-          srcset="
-            ./assets/images/lara-smile-400.jpg   400w,
-            ./assets/images/lara-smile.jpg       630w,
-            ./assets/images/lara-smile-800.jpg   800w,
-            ./assets/images/lara-smile-1000.jpg 1000w,
-            ./assets/images/lara-smile-1200.jpg 1200w"
-            sizes="(min-width: 700px) 50vw, (min-width: 1080px) 630px, 100vw"
-            alt="Lara Amalia"
-            class="img-lara-smile"
-        />
-        <div class="intro misc-intro">
-          <p>{{ index[locale].misc.cat }}</p>
-          <p>{{ index[locale].misc.maryHarry }}</p>
-          <p>{{ index[locale].misc.running }}</p>
-          <p>{{ index[locale].misc.sea }}</p>
-        </div>
-        <div class="contact-info">
-          <h2>{{ index[locale].contact.header }}</h2>
-          <p>
-            {{ index[locale].contact.text | safe }}
-          </p>
-          <div class="contact-footer">
-            <nav class="contact-links">
-              <a
-                href="https://www.wkoecg.at/WEB/Ecg.aspx?FirmaID=98e6d17e-7e16-4b51-8d00-40d684d7e396"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Impressum</a
-              >&nbsp;<span class="text-colored" aria-hidden="true">//</span>&nbsp;
-              <a
-                href="/assets/agb.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >AGB</a
-              >
-            </nav>
-            &copy; 2020 – Lara Amalia.
-          </div>
-        </div>
-      </div>
-      <div class="index-grid-background" aria-hidden="true">
-        <div class="bg-blue-base bg-blue-right" aria-hidden="true"></div>
-        <div class="bg-dev-base bg-dev-block" aria-hidden="true">
-          &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-        </div>
-      </div>
-    </main>
+<div class="grid-base index-grid">
+  <div class="web-header">
+    <div>
+      <p>{{ index[locale].web.header | safe }}</p>
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
+    </div>
+    <div class="web-social">
+      <a
+        href="https://twitter.com/lara_amalia"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+        title="lara_amalia on Twitter"
+        aria-label="lara_amalia on Twitter"
+      >
+        {% include "../partials/icons/_twitter-icon.njk" %}
+      </a>
+      <a
+        href="https://github.com/lara-amalia"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link social-link-github"
+        title="lara-amalia on GitHub"
+        aria-label="lara-amalia on GitHub"
+      >
+        {% include "../partials/icons/_github-icon.njk" %}
+      </a>
+    </div>
   </div>
+  <div class="music-header ">
+    <div>
+      <span class="music-header-text">{{ index[locale].music.header | safe }}</span><br />
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link">
+        {{ index[locale].music.headerLink | safe }}
+      </a>
+    </div>
+    <div class="web-social">
+      <a
+        href="https://www.youtube.com/channel/UCUxZSiFxcTyBCtXJA7wX12g"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link social-link-youtube"
+        title="LaraAmaliaMusic on YouTube"
+        aria-label="LaraAmaliaMusic on YouTube"
+      >
+        {% include "../partials/icons/_youtube-icon.njk" %}
+      </a>
+      <a
+        href="https://www.facebook.com/LaraAmaliaMusic/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link social-link-facebook"
+        title="LaraAmaliaMusic on Facebook"
+        aria-label="LaraAmaliaMusic on Facebook"
+      >
+        {% include "../partials/icons/_facebook-icon.njk" %}
+      </a>
+      <a
+        href="https://www.instagram.com/laraamaliamusic/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link social-link-instagram"
+        title="LaraAmaliaMusic on Instagram"
+        aria-label="LaraAmaliaMusic on Instagram"
+      >
+        {% include "../partials/icons/_instagram-icon.njk" %}
+      </a>
+    </div>
+  </div>
+  <div class="intro music-intro">
+    <h2>
+      {{ index[locale].music.intro.header }}<span class="text-colored" aria-hidden="true">.</span>
+    </h2>
+    <p>
+      {{ index[locale].music.intro.text1 | safe }}
+    </p>
+    <p>
+      {{ index[locale].music.intro.text2 }}
+      <a href="https://www.anderschor.at" target="_blank" rel="noopener noreferrer">anders_chor</a>.
+    </p>
+    <nav class="inpage-nav">
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music" class="nav-link"
+      >{{ index[locale].music.nav.concerts }}</a
+      ><br />
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}music/projects" class="nav-link"
+      >{{ index[locale].music.nav.projects }}</a
+      >
+    </nav>
+  </div>
+  <p class="subheader music-subheader">
+    {{ index[locale].music.subHeader }}<span class="text-colored" aria-hidden="true">.</span>
+  </p>
+  <div class="intro web-intro">
+    <h2>{{ index[locale].web.intro.header }}.</h2>
+    <p>
+      {{ index[locale].web.intro.text1 }}
+    </p>
+    <p>
+      {{ index[locale].web.intro.text2 }}
+    </p>
+    <nav class="inpage-nav">
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a><br />
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a>
+    </nav>
+  </div>
+  <p class="subheader web-subheader">
+    {{ index[locale].web.subHeader }}<span class="text-colored" aria-hidden="true">.</span>
+  </p>
+  <div class="bg-blue-base bg-blue-ingrid" aria-hidden="true"></div>
+  <img
+    src="./assets/images/lara-smile.jpg"
+    srcset="
+      ./assets/images/lara-smile-400.jpg   400w,
+      ./assets/images/lara-smile.jpg       630w,
+      ./assets/images/lara-smile-800.jpg   800w,
+      ./assets/images/lara-smile-1000.jpg 1000w,
+      ./assets/images/lara-smile-1200.jpg 1200w"
+      sizes="(min-width: 700px) 50vw, (min-width: 1080px) 630px, 100vw"
+      alt="Lara Amalia"
+      class="img-lara-smile"
+  />
+  <div class="intro misc-intro">
+    <p>{{ index[locale].misc.cat }}</p>
+    <p>{{ index[locale].misc.maryHarry }}</p>
+    <p>{{ index[locale].misc.running }}</p>
+    <p>{{ index[locale].misc.sea }}</p>
+  </div>
+  <div class="contact-info">
+    <h2>{{ index[locale].contact.header }}</h2>
+    <p>
+      {{ index[locale].contact.text | safe }}
+    </p>
+    <div class="contact-footer">
+      <nav class="contact-links">
+        <a
+          href="https://www.wkoecg.at/WEB/Ecg.aspx?FirmaID=98e6d17e-7e16-4b51-8d00-40d684d7e396"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Impressum</a
+        >&nbsp;<span class="text-colored" aria-hidden="true">//</span>&nbsp;
+        <a
+          href="/assets/agb.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >AGB</a
+        >
+      </nav>
+      &copy; 2020 – Lara Amalia.
+    </div>
+  </div>
+</div>
+<div class="index-grid-background" aria-hidden="true">
+  <div class="bg-blue-base bg-blue-right" aria-hidden="true"></div>
+  <div class="bg-dev-base bg-dev-block" aria-hidden="true">
+    &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+  </div>
+</div>
 {% endblock %}

@@ -5,274 +5,271 @@
 {% set pageTitle = title %}
 
 {% block content %}
-<main class="main">
-  {% include "../partials/_page-header.njk" %}
-  <div class="text-section">
-    <p>{{ web[locale].portfolio.intro | safe }}</p>
-  </div>
-  <div class="grid-base portfolio-grid">
-    <!-- PROJECT: TimeSloth -->
-    <article class="project project-timesloth">
-      <div class="text-section">
-        <h2>{{ web[locale].portfolio.projects.timesloth.title }}</h2>
-        <p>
-          {{ web[locale].portfolio.projects.timesloth.description }}<br />
-          <span class="project-technology"
-            >{{ web[locale].portfolio.projects.timesloth.technology }}</span
-          ><br />
-          {{ web[locale].portfolio.projects.timesloth.time }}
-        </p>
+<div class="text-section">
+  <p>{{ web[locale].portfolio.intro | safe }}</p>
+</div>
+<div class="grid-base portfolio-grid">
+  <!-- PROJECT: TimeSloth -->
+  <article class="project project-timesloth">
+    <div class="text-section">
+      <h2>{{ web[locale].portfolio.projects.timesloth.title }}</h2>
+      <p>
+        {{ web[locale].portfolio.projects.timesloth.description }}<br />
+        <span class="project-technology"
+          >{{ web[locale].portfolio.projects.timesloth.technology }}</span
+        ><br />
+        {{ web[locale].portfolio.projects.timesloth.time }}
+      </p>
 
-        <a
-          class="project-link nav-link"
-          href="{{ web[locale].portfolio.projects.timesloth.link }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="{{ t.common.goToWebsite }}"
-          >{{ t.common.projectLink }}</a
-        >
-      </div>
-    </article>
-    <a
-      class="project-img project-timesloth-img"
-      href="{{ web[locale].portfolio.projects.timesloth.link }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="{{ t.common.goToWebsite }}"
-    >
-      <div class="project-img-wrapper">
-        <img
-          src="../assets/images/portfolio/timesloth-700.jpg"
-          srcset="
-            ../assets/images/portfolio/timesloth-700.jpg  1x,
-            ../assets/images/portfolio/timesloth-1400.jpg 2x
-          "
-          alt="TimeSloth Website Screenshot"
-        />
-      </div>
-    </a>
-    <div aria-hidden="true" class="bg-blue-base bg-timesloth"></div>
-
-    <!-- PROJECT: Feldenkraispraxis -->
-    <article class="project project-feldenkraispraxis">
-      <div class="text-section">
-        <h2>{{ web[locale].portfolio.projects.feldenkraispraxis.title }}</h2>
-        <p>
-          {{ web[locale].portfolio.projects.feldenkraispraxis.description }}<br />
-          <span class="project-technology"
-            >{{ web[locale].portfolio.projects.feldenkraispraxis.technology }}</span
-          ><br />
-          {{ web[locale].portfolio.projects.feldenkraispraxis.time }}
-        </p>
-
-        <a
-          class="project-link nav-link"
-          href="{{ web[locale].portfolio.projects.feldenkraispraxis.link }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="{{ t.common.goToWebsite }}"
-          >{{ t.common.projectLink }}</a
-        >
-      </div>
-    </article>
-    <a
-      class="project-img project-feldenkraispraxis-img"
-      href="{{ web[locale].portfolio.projects.feldenkraispraxis.link }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="{{ t.common.goToWebsite }}"
-      ><div class="project-img-wrapper">
-        <img
-          src="../assets/images/portfolio/feldenkraispraxis-700.jpg"
-          srcset="
-            ../assets/images/portfolio/feldenkraispraxis-700.jpg  1x,
-            ../assets/images/portfolio/feldenkraispraxis-1400.jpg 2x
-          "
-          alt="Feldenkraispraxis Linz Website Screenshot"
-        /></div
-    ></a>
-
-    <div aria-hidden="true" class="bg-blue-base bg-feldenkraispraxis"></div>
-
-    <!-- PROJECT: Fuchzehnowe -->
-    <article class="project project-fuchzehnowe">
-      <div class="text-section">
-        <h2>{{ web[locale].portfolio.projects.fuchzehnowe.title }}</h2>
-        <p>
-          {{ web[locale].portfolio.projects.fuchzehnowe.description }}<br />
-          <span class="project-technology"
-            >{{ web[locale].portfolio.projects.fuchzehnowe.technology }}</span
-          ><br />
-          {{ web[locale].portfolio.projects.fuchzehnowe.time }}
-        </p>
-
-        <a
-          class="project-link nav-link"
-          href="{{ web[locale].portfolio.projects.fuchzehnowe.link }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="{{ t.common.goToWebsite }}"
-          >{{ t.common.projectLink }}</a
-        >
-      </div>
-    </article>
-    <a
-      class="project-img project-fuchzehnowe-img"
-      href="{{ web[locale].portfolio.projects.fuchzehnowe.link }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="{{ t.common.goToWebsite }}"
-      ><picture>
-        <source
-          srcset="
-            ../assets/images/portfolio/fuchzehnowe2-700.png  1x,
-            ../assets/images/portfolio/fuchzehnowe2-1400.png 2x
-          "
-          media="(min-width: 1080px)"
-        />
-        <img
-          src="../assets/images/portfolio/fuchzehnowe1-700.png"
-          srcset="
-            ../assets/images/portfolio/fuchzehnowe1-700.png  1x,
-            ../assets/images/portfolio/fuchzehnowe1-1400.png 2x
-          "
-          alt="fuchzehnowe App Screenshots"
-        /> </picture
-    ></a>
-
-    <div aria-hidden="true" class="bg-blue-base bg-fowe"></div>
-
-    <!-- PROJECT: PLAY -->
-    <article class="project project-play">
-      <div class="text-section">
-        <h2>{{ web[locale].portfolio.projects.play.title }}</h2>
-        <p>
-          {{ web[locale].portfolio.projects.play.description }}<br />
-          <span class="project-technology"
-            >{{ web[locale].portfolio.projects.play.technology }}</span
-          ><br />
-          {{ web[locale].portfolio.projects.play.time }}
-        </p>
-
-        <a
-          class="project-link nav-link"
-          href="{{ web[locale].portfolio.projects.play.link }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="{{ t.common.goToWebsite }}"
-          >{{ t.common.projectLink }}</a
-        >
-      </div>
-    </article>
-    <a
-      class="project-img project-play-img"
-      href="{{ web[locale].portfolio.projects.play.link }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="{{ t.common.goToWebsite }}"
-      ><div class="project-img-wrapper">
-        <img
-          src="../assets/images/portfolio/play-orchester-700.jpg"
-          srcset="
-            ../assets/images/portfolio/play-orchester-700.jpg  1x,
-            ../assets/images/portfolio/play-orchester-1400.jpg 2x
-          "
-          alt="happy eating Website Screenshot"
-        /></div
-    ></a>
-
-    <div aria-hidden="true" class="bg-dev-base bg-play-code">
-      &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+      <a
+        class="project-link nav-link"
+        href="{{ web[locale].portfolio.projects.timesloth.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ t.common.goToWebsite }}"
+        >{{ t.common.projectLink }}</a
+      >
     </div>
+  </article>
+  <a
+    class="project-img project-timesloth-img"
+    href="{{ web[locale].portfolio.projects.timesloth.link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="{{ t.common.goToWebsite }}"
+  >
+    <div class="project-img-wrapper">
+      <img
+        src="../assets/images/portfolio/timesloth-700.jpg"
+        srcset="
+          ../assets/images/portfolio/timesloth-700.jpg  1x,
+          ../assets/images/portfolio/timesloth-1400.jpg 2x
+        "
+        alt="TimeSloth Website Screenshot"
+      />
+    </div>
+  </a>
+  <div aria-hidden="true" class="bg-blue-base bg-timesloth"></div>
 
-    <!-- PROJECT: Happy Eating -->
-    <article class="project project-happyeating">
-      <div class="text-section">
-        <h2>{{ web[locale].portfolio.projects.happyeating.title }}</h2>
-        <p>
-          {{ web[locale].portfolio.projects.happyeating.description }}<br />
-          <span class="project-technology"
-            >{{ web[locale].portfolio.projects.happyeating.technology }}</span
-          ><br />
-          {{ web[locale].portfolio.projects.happyeating.time }}
-        </p>
+  <!-- PROJECT: Feldenkraispraxis -->
+  <article class="project project-feldenkraispraxis">
+    <div class="text-section">
+      <h2>{{ web[locale].portfolio.projects.feldenkraispraxis.title }}</h2>
+      <p>
+        {{ web[locale].portfolio.projects.feldenkraispraxis.description }}<br />
+        <span class="project-technology"
+          >{{ web[locale].portfolio.projects.feldenkraispraxis.technology }}</span
+        ><br />
+        {{ web[locale].portfolio.projects.feldenkraispraxis.time }}
+      </p>
 
-        <a
-          class="project-link nav-link"
-          href="{{ web[locale].portfolio.projects.happyeating.link }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="{{ t.common.goToWebsite }}"
-          >{{ t.common.projectLink }}</a
-        >
-      </div>
-    </article>
-    <a
-      class="project-img project-happyeating-img"
-      href="{{ web[locale].portfolio.projects.happyeating.link }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="{{ t.common.goToWebsite }}"
-      ><div class="project-img-wrapper">
-        <img
-          src="../assets/images/portfolio/happy-eating-700.jpg"
-          srcset="
-            ../assets/images/portfolio/happy-eating-700.jpg  1x,
-            ../assets/images/portfolio/happy-eating-1400.jpg 2x
-          "
-          alt="happy eating Website Screenshot"
-        /></div
-    ></a>
+      <a
+        class="project-link nav-link"
+        href="{{ web[locale].portfolio.projects.feldenkraispraxis.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ t.common.goToWebsite }}"
+        >{{ t.common.projectLink }}</a
+      >
+    </div>
+  </article>
+  <a
+    class="project-img project-feldenkraispraxis-img"
+    href="{{ web[locale].portfolio.projects.feldenkraispraxis.link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="{{ t.common.goToWebsite }}"
+    ><div class="project-img-wrapper">
+      <img
+        src="../assets/images/portfolio/feldenkraispraxis-700.jpg"
+        srcset="
+          ../assets/images/portfolio/feldenkraispraxis-700.jpg  1x,
+          ../assets/images/portfolio/feldenkraispraxis-1400.jpg 2x
+        "
+        alt="Feldenkraispraxis Linz Website Screenshot"
+      /></div
+  ></a>
 
-    <!-- PROJECT: design architektur pfusterer -->
-    <article class="project project-pfusterer">
-      <div class="text-section">
-        <h2>{{ web[locale].portfolio.projects.pfusterer.title }}</h2>
-        <p>
-          {{ web[locale].portfolio.projects.pfusterer.description }}<br />
-          <span class="project-technology"
-            >{{ web[locale].portfolio.projects.pfusterer.technology }}</span
-          ><br />
-          {{ web[locale].portfolio.projects.pfusterer.time }}
-        </p>
+  <div aria-hidden="true" class="bg-blue-base bg-feldenkraispraxis"></div>
 
-        <a
-          class="project-link nav-link"
-          href="{{ web[locale].portfolio.projects.pfusterer.link }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="{{ t.common.goToWebsite }}"
-          >{{ t.common.projectLink }}</a
-        >
-      </div>
-    </article>
-    <a
-      class="project-img project-pfusterer-img"
-      href="{{ web[locale].portfolio.projects.pfusterer.link }}"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="{{ t.common.goToWebsite }}"
-      ><div class="project-img-wrapper">
-        <img
-          src="../assets/images/portfolio/pfusterer-700.jpg"
-          srcset="
-            ../assets/images/portfolio/pfusterer-700.jpg  1x,
-            ../assets/images/portfolio/pfusterer-1400.jpg 2x
-          "
-          alt="happy eating Website Screenshot"
-        /></div
-    ></a>
+  <!-- PROJECT: Fuchzehnowe -->
+  <article class="project project-fuchzehnowe">
+    <div class="text-section">
+      <h2>{{ web[locale].portfolio.projects.fuchzehnowe.title }}</h2>
+      <p>
+        {{ web[locale].portfolio.projects.fuchzehnowe.description }}<br />
+        <span class="project-technology"
+          >{{ web[locale].portfolio.projects.fuchzehnowe.technology }}</span
+        ><br />
+        {{ web[locale].portfolio.projects.fuchzehnowe.time }}
+      </p>
 
-    <div aria-hidden="true" class="bg-blue-base bg-happy"></div>
+      <a
+        class="project-link nav-link"
+        href="{{ web[locale].portfolio.projects.fuchzehnowe.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ t.common.goToWebsite }}"
+        >{{ t.common.projectLink }}</a
+      >
+    </div>
+  </article>
+  <a
+    class="project-img project-fuchzehnowe-img"
+    href="{{ web[locale].portfolio.projects.fuchzehnowe.link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="{{ t.common.goToWebsite }}"
+    ><picture>
+      <source
+        srcset="
+          ../assets/images/portfolio/fuchzehnowe2-700.png  1x,
+          ../assets/images/portfolio/fuchzehnowe2-1400.png 2x
+        "
+        media="(min-width: 1080px)"
+      />
+      <img
+        src="../assets/images/portfolio/fuchzehnowe1-700.png"
+        srcset="
+          ../assets/images/portfolio/fuchzehnowe1-700.png  1x,
+          ../assets/images/portfolio/fuchzehnowe1-1400.png 2x
+        "
+        alt="fuchzehnowe App Screenshots"
+      /> </picture
+  ></a>
+
+  <div aria-hidden="true" class="bg-blue-base bg-fowe"></div>
+
+  <!-- PROJECT: PLAY -->
+  <article class="project project-play">
+    <div class="text-section">
+      <h2>{{ web[locale].portfolio.projects.play.title }}</h2>
+      <p>
+        {{ web[locale].portfolio.projects.play.description }}<br />
+        <span class="project-technology"
+          >{{ web[locale].portfolio.projects.play.technology }}</span
+        ><br />
+        {{ web[locale].portfolio.projects.play.time }}
+      </p>
+
+      <a
+        class="project-link nav-link"
+        href="{{ web[locale].portfolio.projects.play.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ t.common.goToWebsite }}"
+        >{{ t.common.projectLink }}</a
+      >
+    </div>
+  </article>
+  <a
+    class="project-img project-play-img"
+    href="{{ web[locale].portfolio.projects.play.link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="{{ t.common.goToWebsite }}"
+    ><div class="project-img-wrapper">
+      <img
+        src="../assets/images/portfolio/play-orchester-700.jpg"
+        srcset="
+          ../assets/images/portfolio/play-orchester-700.jpg  1x,
+          ../assets/images/portfolio/play-orchester-1400.jpg 2x
+        "
+        alt="happy eating Website Screenshot"
+      /></div
+  ></a>
+
+  <div aria-hidden="true" class="bg-dev-base bg-play-code">
+    &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
   </div>
-  <div aria-hidden="true" class="bg-dev-base bg-portfolio-footer">
-    &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
-  </div>
-  <div class="text-section portfolio-contact">
-    <span class="subheader portfolio-contact-subheader"
-      >{{ web[locale].portfolio.contactHeader }}</span
-    >
-    <p>{{ web[locale].portfolio.contact | safe }}</p>
-  </div>
-</main>
+
+  <!-- PROJECT: Happy Eating -->
+  <article class="project project-happyeating">
+    <div class="text-section">
+      <h2>{{ web[locale].portfolio.projects.happyeating.title }}</h2>
+      <p>
+        {{ web[locale].portfolio.projects.happyeating.description }}<br />
+        <span class="project-technology"
+          >{{ web[locale].portfolio.projects.happyeating.technology }}</span
+        ><br />
+        {{ web[locale].portfolio.projects.happyeating.time }}
+      </p>
+
+      <a
+        class="project-link nav-link"
+        href="{{ web[locale].portfolio.projects.happyeating.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ t.common.goToWebsite }}"
+        >{{ t.common.projectLink }}</a
+      >
+    </div>
+  </article>
+  <a
+    class="project-img project-happyeating-img"
+    href="{{ web[locale].portfolio.projects.happyeating.link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="{{ t.common.goToWebsite }}"
+    ><div class="project-img-wrapper">
+      <img
+        src="../assets/images/portfolio/happy-eating-700.jpg"
+        srcset="
+          ../assets/images/portfolio/happy-eating-700.jpg  1x,
+          ../assets/images/portfolio/happy-eating-1400.jpg 2x
+        "
+        alt="happy eating Website Screenshot"
+      /></div
+  ></a>
+
+  <!-- PROJECT: design architektur pfusterer -->
+  <article class="project project-pfusterer">
+    <div class="text-section">
+      <h2>{{ web[locale].portfolio.projects.pfusterer.title }}</h2>
+      <p>
+        {{ web[locale].portfolio.projects.pfusterer.description }}<br />
+        <span class="project-technology"
+          >{{ web[locale].portfolio.projects.pfusterer.technology }}</span
+        ><br />
+        {{ web[locale].portfolio.projects.pfusterer.time }}
+      </p>
+
+      <a
+        class="project-link nav-link"
+        href="{{ web[locale].portfolio.projects.pfusterer.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ t.common.goToWebsite }}"
+        >{{ t.common.projectLink }}</a
+      >
+    </div>
+  </article>
+  <a
+    class="project-img project-pfusterer-img"
+    href="{{ web[locale].portfolio.projects.pfusterer.link }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="{{ t.common.goToWebsite }}"
+    ><div class="project-img-wrapper">
+      <img
+        src="../assets/images/portfolio/pfusterer-700.jpg"
+        srcset="
+          ../assets/images/portfolio/pfusterer-700.jpg  1x,
+          ../assets/images/portfolio/pfusterer-1400.jpg 2x
+        "
+        alt="happy eating Website Screenshot"
+      /></div
+  ></a>
+
+  <div aria-hidden="true" class="bg-blue-base bg-happy"></div>
+</div>
+<div aria-hidden="true" class="bg-dev-base bg-portfolio-footer">
+  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;
+</div>
+<div class="text-section portfolio-contact">
+  <span class="subheader portfolio-contact-subheader"
+    >{{ web[locale].portfolio.contactHeader }}</span
+  >
+  <p>{{ web[locale].portfolio.contact | safe }}</p>
+</div>
 {% endblock %}

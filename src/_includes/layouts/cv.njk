@@ -5,40 +5,37 @@
 {% set pageTitle = title %}
 
 {% block content %}
-<main class="main">
-  {% include "../partials/_page-header.njk" %}
-  <div class="text-section">
-    <h2>{{ web[locale].cv.jobs }}</h2>
-    <ul>
-      <li class="job-current">
-        <strong>{{ web[locale].cv.entries.self.position }}</strong><br />
-        <span>{{ web[locale].cv.entries.self.company }},</span> <a href="https://www.scale.at">scale.at &raquo;</a><br />
-        <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web">Portfolio &raquo;</a><br />
-        <span>{{ web[locale].cv.entries.self.time }}</span>
-      </li>
+<div class="text-section">
+  <h2>{{ web[locale].cv.jobs }}</h2>
+  <ul>
+    <li class="job-current">
+      <strong>{{ web[locale].cv.entries.self.position }}</strong><br />
+      <span>{{ web[locale].cv.entries.self.company }},</span> <a href="https://www.scale.at">scale.at &raquo;</a><br />
+      <a href="{{ site.baseUrl }}{{ site[locale].homePath }}web">Portfolio &raquo;</a><br />
+      <span>{{ web[locale].cv.entries.self.time }}</span>
+    </li>
 
-      {% set currentJob = true %}
-      {% set companyName = "fh" %}
-      {% include "../partials/_job.njk" %}
+    {% set currentJob = true %}
+    {% set companyName = "fh" %}
+    {% include "../partials/_job.njk" %}
 
-      {% set currentJob = false %}
-      {% set companyName = "dynatrace" %}
-      {% include "../partials/_job.njk" %}
+    {% set currentJob = false %}
+    {% set companyName = "dynatrace" %}
+    {% include "../partials/_job.njk" %}
 
-      {% set companyName = "holis" %}
-      {% include "../partials/_job.njk" %}
+    {% set companyName = "holis" %}
+    {% include "../partials/_job.njk" %}
 
-      {% set companyName = "atikon" %}
-      {% include "../partials/_job.njk" %}
+    {% set companyName = "atikon" %}
+    {% include "../partials/_job.njk" %}
 
-      {% set companyName = "nachhilfe" %}
-      {% include "../partials/_job.njk" %}
-    </ul>
-    <h2>{{ web[locale].cv.education }}</h2>
-    <ul>
-      <li><strong>Computer Science</strong><span> – JKU Linz, 2013 - 2016</span></li>
-      <li><strong>{{ web[locale].cv.entries.studies.mtd }}</strong><span> – FH Hagenberg, 2010 - 2013 </span></li>
-    </ul>
-  </div>
-</main>
+    {% set companyName = "nachhilfe" %}
+    {% include "../partials/_job.njk" %}
+  </ul>
+  <h2>{{ web[locale].cv.education }}</h2>
+  <ul>
+    <li><strong>Computer Science</strong><span> – JKU Linz, 2013 - 2016</span></li>
+    <li><strong>{{ web[locale].cv.entries.studies.mtd }}</strong><span> – FH Hagenberg, 2010 - 2013 </span></li>
+  </ul>
+</div>
 {% endblock %}

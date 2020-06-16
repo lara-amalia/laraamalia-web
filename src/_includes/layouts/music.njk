@@ -5,71 +5,68 @@
 {% set pageTitle = title %}
 
 {% block content %}
-<main class="main">
-  {% include "../partials/_page-header.njk" %}
-  <div class="gigs-section js-upcoming-gigs-section">
-    <h2>{{ music[locale].upcoming.header }}</h2>
-    <ul id="upcoming-gigs">
-      <!-- dynamically filled -->
-    </ul>
+<div class="gigs-section js-upcoming-gigs-section">
+  <h2>{{ music[locale].upcoming.header }}</h2>
+  <ul id="upcoming-gigs">
+    <!-- dynamically filled -->
+  </ul>
+</div>
+<div class="lines lines--left" aria-hidden="true">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+<div class="text-img-section">
+  <img
+    src="../assets/images/lara-violin.jpg"
+    srcset="
+      ../assets/images/lara-violin-330.jpg   330w,
+      ../assets/images/lara-violin-450.jpg   450w,
+      ../assets/images/lara-violin.jpg       660w,
+      ../assets/images/lara-violin-800.jpg   800w,
+      ../assets/images/lara-violin-1000.jpg 1000w,
+      ../assets/images/lara-violin-1200.jpg 1200w
+    "
+    sizes="(min-width: 700px) 30vw, (min-width: 1080px) 330px, 100vw"
+    alt="{{ music[locale].imgAlt }}"
+    class="img-lara-violin"
+  />
+  <div>
+    <h2>{{ music[locale].contact.header }}</h2>
+    <p>{{ music[locale].contact.text1 | safe }}</p>
+    <p>{{ music[locale].contact.text2 | safe }}</p>
+    <p>{{ music[locale].contact.text3 | safe }}</p>
   </div>
-  <div class="lines lines--left" aria-hidden="true">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
-  <div class="text-img-section">
-    <img
-      src="../assets/images/lara-violin.jpg"
-      srcset="
-        ../assets/images/lara-violin-330.jpg   330w,
-        ../assets/images/lara-violin-450.jpg   450w,
-        ../assets/images/lara-violin.jpg       660w,
-        ../assets/images/lara-violin-800.jpg   800w,
-        ../assets/images/lara-violin-1000.jpg 1000w,
-        ../assets/images/lara-violin-1200.jpg 1200w
-      "
-      sizes="(min-width: 700px) 30vw, (min-width: 1080px) 330px, 100vw"
-      alt="{{ music[locale].imgAlt }}"
-      class="img-lara-violin"
-    />
-    <div>
-      <h2>{{ music[locale].contact.header }}</h2>
-      <p>{{ music[locale].contact.text1 | safe }}</p>
-      <p>{{ music[locale].contact.text2 | safe }}</p>
-      <p>{{ music[locale].contact.text3 | safe }}</p>
-    </div>
-  </div>
-  <div class="gigs-section">
-    <h2>{{ music[locale].past.header }}</h2>
-    <ul>
-      {% for gig in music.gigs %}
-        <li class="js-gig">
-          <strong class="js-gig-date">{{ gig.date }}</strong>
-          {% if gig.time !== '' %}
-            <span>– {{ gig.time }}</span>
-          {% endif %}
-          <span>– {{ gig.band }} – {{ gig.info }}</span>
-          {% if (gig.link !== undefined) and (gig.link !== '') %}
-            <span>– <a href="{{ gig.link }}" target="_blank" rel="noopener noreferrer">{{ common[locale].more }}</a></span>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-    <p>{{ music[locale].past.summary }}</p>
-  </div>
-  <div class="lines lines--right" aria-hidden="true">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
-  <div class="music-background" aria-hidden="true">
-    <div class="bg-blue-base bg-blue"></div>
-  </div>
-  <script src="../scripts/main.js"></script>
-</main>
+</div>
+<div class="gigs-section">
+  <h2>{{ music[locale].past.header }}</h2>
+  <ul>
+    {% for gig in music.gigs %}
+      <li class="js-gig">
+        <strong class="js-gig-date">{{ gig.date }}</strong>
+        {% if gig.time !== '' %}
+          <span>– {{ gig.time }}</span>
+        {% endif %}
+        <span>– {{ gig.band }} – {{ gig.info }}</span>
+        {% if (gig.link !== undefined) and (gig.link !== '') %}
+          <span>– <a href="{{ gig.link }}" target="_blank" rel="noopener noreferrer">{{ common[locale].more }}</a></span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <p>{{ music[locale].past.summary }}</p>
+</div>
+<div class="lines lines--right" aria-hidden="true">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+<div class="music-background" aria-hidden="true">
+  <div class="bg-blue-base bg-blue"></div>
+</div>
+<script src="../scripts/main.js"></script>
 {% endblock %}

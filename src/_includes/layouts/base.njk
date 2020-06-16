@@ -19,9 +19,9 @@
   <base href="{{ site.baseUrl }}" />
 </head>
 <body>
-  {{ content | safe }}
-
-  {% block content %}{% endblock %}
-
+  <main class="main">
+    {% include "../partials/_page-header.njk" %}
+    {% block content %}{% endblock %}
+  </main>
 </body>
 </html>
