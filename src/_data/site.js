@@ -8,6 +8,7 @@ module.exports = {
   baseUrl,
   name: "Lara Amalia",
   twitter: "@lara_amalia",
+  blogHome: 'blog',
   en: {
     homePath: "/en/",
     alternateLangPathPrefix: "",

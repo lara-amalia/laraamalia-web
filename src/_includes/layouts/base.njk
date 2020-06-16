@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="alternate" hrefLang="{{ site[locale].alternateLang }}" href="{{ site.baseUrl }}{{ site[locale].alternateLangPathPrefix }}{{ site[locale].basePath(page.url) }}" />
-  <link rel="alternate" hrefLang="{{ locale }}" href="{{ site.baseUrl }}{{ page.url }}" />
+  {% block alternate %}{% endblock %}
   <title>{{ title }} &middot; {{ site[locale].metaTitle }}</title>
   <link
     href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,700"
@@ -20,8 +19,7 @@
 </head>
 <body>
   <main class="main">
-    {% include "../partials/_page-header.njk" %}
-    {% block content %}{% endblock %}
+    {% block main %}{% endblock %}
   </main>
 </body>
 </html>

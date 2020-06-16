@@ -1,0 +1,16 @@
+{% extends "layouts/base-blog.njk" %}
+
+{% block content %}
+  <header class="page-header">
+    <h1 class="page-title">
+      {{ title }}<span class="text-colored" aria-hidden="true">.</span>
+    </h1>
+    <nav class="home-nav">
+      <a href="{{ site[locale].homePath }}{{ site.blogHome }}" class="home-link">{{ blog[locale].toOverview | safe }}</a>
+    </nav>
+  </header>
+
+  <div class="text-section blog-text-section">
+    {{ content | safe }}
+  </div>
+{% endblock %}
