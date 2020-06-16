@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{#  <link rel="alternate" href="https://www.laraamalia.at{{config.alternateLangRoot}}web" hrefLang="{{config.alternateLang}}"/>#}
-  <title>{{ title }} | {{ metaTitle }}</title>
+  <link rel="alternate" hrefLang="{{ site[locale].alternateLang }}" href="{{ site.baseUrl }}{{ site[locale].alternateLangPathPrefix }}{{ site[locale].basePath(page.url) }}" />
+  <link rel="alternate" hrefLang="{{ locale }}" href="{{ site.baseUrl }}{{ page.url }}" />
+  <title>{{ title }} &middot; {{ site[locale].metaTitle }}</title>
   <link
     href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,700"
     rel="stylesheet"
   />
-  <link href="https://fonts.googleapis.com/css?family=Barlow:400,700" rel="stylesheet" />
-  <link rel="stylesheet" href="{{ site.baseUrl }}/styles/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:400,700" />
+  <link rel="stylesheet" href="{{ site.baseUrl }}/styles/main.css" />
   <link rel="icon" type="image/png" href="{{ site.baseUrl }}/favicon.png" sizes="32x32" />
   <meta name="title" content="{{ metaTitle }}" />
   <meta name="description" content="{{ metaDescription }}" />

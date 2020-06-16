@@ -5,14 +5,20 @@ module.exports = {
   twitter: "@lara_amalia",
   en: {
     homePath: "/en/",
-    langNav: (link) => `<a href="${link.substring(3)}">DE</a> / <span>EN</span>`,
+    alternateLangPathPrefix: "",
+    alternateLang: "de",
+    basePath: (path) => `${path.substring(3)}`,
+    langNav: (path) => `<a href="${path.substring(3)}">DE</a> / <span>EN</span>`,
     metaTitle: "Lara Amalia. Web developer & musician.",
     metaDescription:
       "Hello, my name is Lara Amalia. I’m a web developer by day and a musician by night.",
   },
   de: {
     homePath: "/",
-    langNav: (link) => `<span>DE</span> / <a href="/en${link}">EN</a>`,
+    alternateLangPathPrefix: "/en",
+    alternateLang: "en",
+    basePath: (path) => path,
+    langNav: (path) => `<span>DE</span> / <a href="/en${path}">EN</a>`,
     metaTitle: "Lara Amalia. Web Entwicklerin & Musikerin.",
     metaDescription:
       "Hallo, ich bin Lara Amalia. Ich bin Web Entwicklerin am Tag und Musikerin bei Nacht.",
