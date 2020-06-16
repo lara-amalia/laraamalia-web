@@ -1,4 +1,11 @@
 {
+	"blog": {
+		"meta": {
+			"description": "On my blog I’m writing about web development basics. Main topics are HTML, CSS and a little bit of JavaScript. Blog posts are only available in English.",
+			"title": "Blog. Lara Amalia."
+		},
+		"toOverview": "&laquo; back to overview"
+	},
 	"common": {
 		"goToWebsite": "Open website in a new tab",
 		"homeLink": "&laquo; back home",

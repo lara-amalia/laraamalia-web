@@ -1,0 +1,19 @@
+{% extends "layouts/base-blog.njk" %}
+
+{% set metaTitle = blog[locale].meta.title %}
+{% set metaDescription = blog[locale].meta.description %}
+{% set pageTitle = title %}
+
+{% block content %}
+  {% include "../partials/_page-header.njk" %}
+  <div class="text-section blog-text-section">
+    {{ content | safe }}
+
+    <ul>
+      {% for post in collections.post %}
+        <li><a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+{% endblock %}

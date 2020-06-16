@@ -1,3 +1,5 @@
+const markdownIt = require("markdown-it");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["md", "njk"]);
 
@@ -9,7 +11,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/scripts/main.js": "scripts/main.js" });
 
   // Add layout alias for blog post layout
-  // eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
+
+  const markdownLibrary = markdownIt({
+    html: true,
+    quotes: '„“‚‘',
+    linkify: true,
+  });
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
     dir: {

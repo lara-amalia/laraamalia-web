@@ -1,4 +1,11 @@
 {
+	"blog": {
+		"meta": {
+			"description": "Hier schreibe ich über Web Development Grundlagen. Blog Artikel sind nur auf Englisch verfügbar.",
+			"title": "Blog. Lara Amalia."
+		},
+		"toOverview": "&laquo; zur Übersicht"
+	},
 	"common": {
 		"goToWebsite": "Website in neuem Tab öffnen",
 		"homeLink": "&laquo; Startseite",

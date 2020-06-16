@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% block alternate %}
+  <link rel="alternate" hrefLang="{{ site[locale].alternateLang }}" href="{{ site.baseUrl }}{{ site[locale].alternateLangPathPrefix }}{{ site[locale].basePath(page.url) }}" />
+  <link rel="alternate" hrefLang="{{ locale }}" href="{{ site.baseUrl }}{{ page.url }}" />
+{% endblock %}
+
+{% block main %}
+  {% include "../partials/_page-header.njk" %}
+  {% block content %}{% endblock %}
+{% endblock %}
