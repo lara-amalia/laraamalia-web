@@ -3,15 +3,19 @@
 {% set metaTitle = blog[locale].meta.title %}
 {% set metaDescription = blog[locale].meta.description %}
 {% set pageTitle = title %}
+{% set excludeLanguageNav = true %}
 
 {% block content %}
   {% include "../partials/_page-header.njk" %}
   <div class="text-section blog-text-section">
     {{ content | safe }}
 
-    <ul>
-      {% for post in collections.post %}
-        <li><a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a></li>
+    <ul class="blog-list">
+      {% for post in collections.post | reverse %}
+        <li>
+          <a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a> –
+          <strong><time class="postlist-date" datetime="{{ post.date | dateTimeDate }}">{{ post.date | displayDate }}</time></strong>
+        </li>
       {% endfor %}
     </ul>
   </div>
