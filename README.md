@@ -4,7 +4,7 @@ This website is build with [11ty](https://www.11ty.dev), a simple static site ge
 
 For deployment [Netlify](https://www.netlify.com) is used.
 
-The site can be found on (www.laraamalia.at)[https://www.laraamalia.at].
+The site can be found on [www.laraamalia.at](https://www.laraamalia.at).
 
 ## Development
 
