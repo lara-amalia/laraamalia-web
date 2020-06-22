@@ -25,6 +25,19 @@
     <meta name="robots" content="none" />
   {% endif %}
   <base href="{{ site.baseUrl }}" />
+  {% if site.gaId %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gaId }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag(
+      'config',
+      {{ site.gaId }},
+      {'anonymize_ip': true, 'allow_google_signals': false, 'allow_ad_personalization_signals': false }
+    );
+  </script>
+  {% endif %}
 </head>
 <body>
   <main class="main">
