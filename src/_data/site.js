@@ -1,10 +1,13 @@
+const isProduction = process.env.CONTEXT === "production";
+
 const baseUrl =
-  process.env.CONTEXT === "production"
+  isProduction
     ? process.env.URL || "https://www.laraamalia.at"
     : process.env.BASE_URL || process.env.DEPLOY_URL;
 
 module.exports = {
   buildTime: new Date(),
+  buildProduction: isProduction,
   baseUrl,
   name: "Lara Amalia",
   twitter: "@lara_amalia",
@@ -30,4 +33,8 @@ module.exports = {
     metaDescription:
       "Hallo, ich bin Lara Amalia. Ich bin Web Entwicklerin am Tag und Musikerin bei Nacht.",
   },
+  blog: {
+    title: "Blog. Lara Amalia. Web developer and musician.",
+    description: "A blog about web development basics and thoughts from a developer’s and musician’s life.",
+  }
 };

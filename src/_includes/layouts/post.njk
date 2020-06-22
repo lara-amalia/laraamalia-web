@@ -1,5 +1,8 @@
 {% extends "layouts/base-blog.njk" %}
 
+{% set metaTitle %}{{ title }} · {{ site.blog.title | safe }}{% endset %}
+{% set metaDescription = description %}
+
 {% block content %}
   <article>
     <header class="page-header">

@@ -1,15 +1,21 @@
 const markdownIt = require("markdown-it");
+const pluginRss = require('@11ty/eleventy-plugin-rss')
 
 const addLeadingZero = (number) => {
   return `0${number}`.slice(-2);
 };
 
 module.exports = function (eleventyConfig) {
+  // Plugins
+  eleventyConfig.addPlugin(pluginRss)
+
+  // Template formats
   eleventyConfig.setTemplateFormats(["md", "njk"]);
 
   // Copy static files to output directory
   eleventyConfig.addPassthroughCopy("content/assets");
   eleventyConfig.addPassthroughCopy("content/favicon.png");
+  eleventyConfig.addPassthroughCopy("content/_redirects");
 
   // TODO: make it typescript
   eleventyConfig.addPassthroughCopy({
@@ -23,20 +29,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("displayDate", (dateString) => {
     const date = new Date(dateString);
     return `${addLeadingZero(date.getDate())}.${addLeadingZero(
-      date.getMonth()
+      date.getMonth() + 1
     )}.${date.getFullYear()}`;
   });
 
   eleventyConfig.addFilter("dateTimeDate", (dateString) => {
     const date = new Date(dateString);
     return `${date.getFullYear()}-${addLeadingZero(
-      date.getMonth()
+      date.getMonth() + 1
     )}-${addLeadingZero(date.getDate())}`;
   });
 
   const markdownLibrary = markdownIt({
     html: true,
-    quotes: "„“‚‘",
     linkify: true,
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
