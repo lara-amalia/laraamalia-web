@@ -1,7 +1,7 @@
 {% extends "layouts/base-blog.njk" %}
 
-{% set metaTitle = blog[locale].meta.title %}
-{% set metaDescription = blog[locale].meta.description %}
+{% set metaTitle = site.blog.title %}
+{% set metaDescription = site.blog.description %}
 {% set pageTitle = title %}
 {% set excludeLanguageNav = true %}
 
