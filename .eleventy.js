@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
-const pluginRss = require('@11ty/eleventy-plugin-rss')
+const pluginRss = require('@11ty/eleventy-plugin-rss');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const addLeadingZero = (number) => {
   return `0${number}`.slice(-2);
@@ -7,7 +8,8 @@ const addLeadingZero = (number) => {
 
 module.exports = function (eleventyConfig) {
   // Plugins
-  eleventyConfig.addPlugin(pluginRss)
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Template formats
   eleventyConfig.setTemplateFormats(["md", "njk"]);

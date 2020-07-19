@@ -71,6 +71,17 @@ li + li {
   margin-top: 0.5rem;
 }
 
+code {
+  font-size: 16px;
+  background-color: $code-bg-color;
+}
+
+pre {
+  background-color: $code-bg-color;
+  padding: 10px;
+  overflow: auto;
+}
+
 @media (min-width: $screen-md) {
   html,
   body {

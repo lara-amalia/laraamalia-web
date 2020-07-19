@@ -32,6 +32,10 @@
   p {
     line-height: 1.45;
   }
+
+  @media (min-width: $screen-md) {
+    padding: 0;
+  }
 }
 
 @media (min-width: $screen-md) {
