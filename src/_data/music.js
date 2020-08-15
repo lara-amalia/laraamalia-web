@@ -6,6 +6,13 @@ module.exports = {
   de,
   gigs: [
     {
+      date: "10.10.2020",
+      time: "19:30",
+      band: "anders_chor",
+      info: "SING! Unsere Lieblingslieder",
+      link: "https://www.anderschor.at",
+    },
+    {
       date: "18.04.2020",
       time: "20:00",
       band: "Geranium Kiss, Rosa Braille Ohrchester",
