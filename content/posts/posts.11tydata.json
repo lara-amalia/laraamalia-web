@@ -1,6 +1,0 @@
-{
-  "locale": "en",
-  "tags": "post",
-  "layout": "post",
-  "permalink": "/blog/{{page.fileSlug}}/"
-}

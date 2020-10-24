@@ -2,10 +2,6 @@ const markdownIt = require("markdown-it");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-const addLeadingZero = (number) => {
-  return `0${number}`.slice(-2);
-};
-
 module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
@@ -24,27 +20,9 @@ module.exports = function (eleventyConfig) {
     "src/scripts/main.js": "scripts/main.js",
   });
 
-  // Add layout alias for blog post layout
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-
-  // Add filters
-  eleventyConfig.addFilter("displayDate", (dateString) => {
-    const date = new Date(dateString);
-    return `${addLeadingZero(date.getDate())}.${addLeadingZero(
-      date.getMonth() + 1
-    )}.${date.getFullYear()}`;
-  });
-
-  eleventyConfig.addFilter("dateTimeDate", (dateString) => {
-    const date = new Date(dateString);
-    return `${date.getFullYear()}-${addLeadingZero(
-      date.getMonth() + 1
-    )}-${addLeadingZero(date.getDate())}`;
-  });
-
   const markdownLibrary = markdownIt({
     html: true,
-    linkify: true,
+    linkify: false,
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
