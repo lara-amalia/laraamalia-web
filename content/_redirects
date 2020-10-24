@@ -1,2 +1,5 @@
-/feed/           /blog/feed.xml
-/blog/feed/      /blog/feed.xml
+/feed/                                  /blog/feed.xml
+/blog/feed/                             /blog/feed.xml
+
+/blog/another-web-development-blog/     https://www.scale.at/blog/another-web-development-tutorial
+/blog/lets-get-started/                 https://www.scale.at/blog/lets-get-started

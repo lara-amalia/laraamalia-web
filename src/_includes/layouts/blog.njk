@@ -9,15 +9,5 @@
   {% include "../partials/_page-header.njk" %}
   <div class="text-section blog-text-section">
     {{ content | safe }}
-
-    <ul class="blog-list">
-      {% for post in collections.post | reverse %}
-        <li>
-          <a href="{{ post.url | url }}" class="postlist-link">{{ post.data.title }}</a> –
-          <strong class="postlist-date"><time class="postlist-date" datetime="{{ post.date | dateTimeDate }}">{{ post.date | displayDate }}</time></strong>
-        </li>
-      {% endfor %}
-    </ul>
   </div>
-
 {% endblock %}
