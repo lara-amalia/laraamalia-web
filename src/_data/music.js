@@ -9,7 +9,7 @@ module.exports = {
       date: "10.10.2020",
       time: "19:30",
       band: "anders_chor",
-      info: "SING! Unsere Lieblingslieder",
+      info: "SING! Unsere Lieblingslieder (ABGESAGT/CANCELLED)",
       link: "https://www.anderschor.at",
     },
     {
