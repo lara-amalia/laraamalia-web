@@ -9,40 +9,16 @@
   <div class="web-header">
     <div>
       <p>{{ index[locale].web.header | safe }}</p>
-      <a href="{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.headerLink | safe }}</a>
+      <a
+        href="https://www.scale.at/blog/collections/portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-link"
+        title="portfolio of scale – your web solutions"
+        aria-label="scale – your web solutions. link to portfolio"
+      >{{ index[locale].web.headerLink | safe }}</a>
     </div>
-    <div class="web-social">
-      <a
-        href="https://www.scale.at/{{ locale }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-link social-link-scale"
-        title="scale – your web solutions"
-        aria-label="scale – your web solutions. website link"
-      >
-        {% include "../partials/icons/_website-icon.njk" %}
-      </a>
-      <a
-        href="https://github.com/lara-amalia"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-link social-link-github"
-        title="lara-amalia on GitHub"
-        aria-label="lara-amalia on GitHub"
-      >
-        {% include "../partials/icons/_github-icon.njk" %}
-      </a>
-      <a
-        href="https://twitter.com/lara_amalia"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="social-link"
-        title="lara_amalia on Twitter"
-        aria-label="lara_amalia on Twitter"
-      >
-        {% include "../partials/icons/_twitter-icon.njk" %}
-      </a>
-    </div>
+
   </div>
   <div class="music-header ">
     <div>
@@ -107,23 +83,6 @@
   <p class="subheader music-subheader">
     {{ index[locale].music.subHeader }}<span class="text-colored" aria-hidden="true">.</span>
   </p>
-  <div class="intro web-intro">
-    <h2>{{ index[locale].web.intro.header }}.</h2>
-    <p>
-      {{ index[locale].web.intro.text1 }}
-    </p>
-    <p>
-      {{ index[locale].web.intro.text2 }}
-    </p>
-    <nav class="inpage-nav">
-      <a href="/blog" class="nav-link">blog</a><br />
-      <a href="{{ site[locale].homePath }}web" class="nav-link">{{ index[locale].web.nav.projects }}</a><br />
-      <a href="{{ site[locale].homePath }}cv" class="nav-link">{{ index[locale].web.nav.cv }}</a>
-    </nav>
-  </div>
-  <p class="subheader web-subheader">
-    {{ index[locale].web.subHeader }}<span class="text-colored" aria-hidden="true">.</span>
-  </p>
   <div class="bg-blue-base bg-blue-ingrid" aria-hidden="true"></div>
   <img
     src="/assets/images/lara-smile.jpg"
@@ -149,21 +108,16 @@
       {{ index[locale].contact.text | safe }}
     </p>
     <div class="contact-footer">
-      <nav class="contact-links">
+      <div class="contact-links">
+        <span>{{ index[locale].contact.scale }}</span>
         <a
-          href="https://www.wkoecg.at/WEB/Ecg.aspx?FirmaID=98e6d17e-7e16-4b51-8d00-40d684d7e396"
+          href="https://www.scale.at"
           target="_blank"
           rel="noopener noreferrer"
-        >Impressum</a
-        >&nbsp;<span class="text-colored" aria-hidden="true">//</span>&nbsp;
-        <a
-          href="/assets/agb.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >AGB</a
+        >scale – your web solutions.</a
         >
-      </nav>
-      &copy; 2020 – Lara Amalia.
+      </div>
+      &copy; 2020 – Lara Aigmüller&nbsp;<span class="text-colored" aria-hidden="true">//</span>&nbsp;Linz
     </div>
   </div>
 </div>
