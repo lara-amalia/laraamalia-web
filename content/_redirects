@@ -1,5 +1,9 @@
-/feed/                                  /blog/feed.xml
-/blog/feed/                             /blog/feed.xml
-
+/blog/                                  https://www.scale.at/blog
 /blog/another-web-development-blog/     https://www.scale.at/blog/another-web-development-tutorial
 /blog/lets-get-started/                 https://www.scale.at/blog/lets-get-started
+
+/de/cv/                                 https://www.scale.at/de#about
+/en/cv/                                 https://www.scale.at/en#about
+
+/en/web/                                https://www.scale.at/blog/collections/portfolio
+/de/web/                                https://www.scale.at/blog/collections/portfolio

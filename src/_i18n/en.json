@@ -1,11 +1,4 @@
 {
-	"blog": {
-		"meta": {
-			"description": "On my blog I’m writing about web development basics. Main topics are HTML, CSS and a little bit of JavaScript. Blog posts are only available in English.",
-			"title": "Blog. Lara Amalia."
-		},
-		"toOverview": "&laquo; back to overview"
-	},
 	"common": {
 		"goToWebsite": "Open website in a new tab",
 		"homeLink": "&laquo; back home",
@@ -15,6 +8,7 @@
 	"index": {
 		"contact": {
 			"header": "Wanna chat with me?",
+			"scale": "You can find everything about web development here:",
 			"text": "You can find me in Linz, <a href=\"https://twitter.com/lara_amalia\" target=\"_blank\" rel=\"noopener noreferrer\">on Twitter</a> or you can just write me an email at <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>."
 		},
 		"greeting": "Hello, I am<br>Lara Amalia",
@@ -44,17 +38,7 @@
 		},
 		"web": {
 			"header": "I’m a web developer<br />by day…",
-			"headerLink": "portfolio &raquo;",
-			"intro": {
-				"header": "web developer",
-				"text1": "I built my first websites with table layouts and framesets and using image maps for site navigation.",
-				"text2": "Since then I have learned a lot. I studied Media Technology and Design (FH Hagenberg) and Computer Science (JKU Linz)."
-			},
-			"nav": {
-				"cv": "cv",
-				"projects": "projects"
-			},
-			"subHeader": "When I was 12 years old I read a book about HTML and started building websites"
+			"headerLink": "portfolio &raquo;"
 		}
 	},
 	"music": {
@@ -85,105 +69,6 @@
 		"title": "Music",
 		"upcoming": {
 			"header": "Upcoming gigs"
-		}
-	},
-	"web": {
-		"cv": {
-			"education": "Education",
-			"entries": {
-				"atikon": {
-					"company": "Atikon, Leonding",
-					"position": "Web developer (internship)",
-					"time": "March 2013 - June 2013"
-				},
-				"dynatrace": {
-					"company": "Dynatrace Austria, Linz",
-					"position": "Web developer, Design operations",
-					"time": "September 2016 - March 2020"
-				},
-				"fh": {
-					"company": "University of Applied Sciences, Campus Hagenberg\n(FH Hagenberg)",
-					"position": "Lecturer (Webdesign & -programming)",
-					"time": "September 2018 - now"
-				},
-				"holis": {
-					"company": "holis market, Linz",
-					"position": "Web developer",
-					"time": "February 2015 - January 2016"
-				},
-				"nachhilfe": {
-					"company": "IFL Linz, FH Hagenberg",
-					"position": "Mathematics tutoring",
-					"time": "August 2009 - February 2013"
-				},
-				"self": {
-					"company": "self-employed",
-					"position": "Web developer",
-					"time": "February 2015 - now"
-				},
-				"studies": {
-					"mtd": "Media Technology and Design"
-				}
-			},
-			"jobs": "Jobs",
-			"meta": {
-				"description": "A list of jobs I did in the past years.",
-				"title": "CV"
-			}
-		},
-		"portfolio": {
-			"contact": "Are you interested in my work or do you have a project idea you want to discuss? I’d be happy to hear from you!<br />\nJust say hi: <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>",
-			"contactHeader": "let’s work together!",
-			"intro": "I like designing and building <strong>things for the web</strong>. I'm interested in <strong>modern web technologies</strong> and also have a good feel for <strong>UI and UX</strong>. I pay attention to detail while always having the bigger picture in mind. When I'm creating websites or apps, logical content structures, clean and responsive design, accessibility, and performance play an important role to me.",
-			"meta": {
-				"description": "Browse through some of my web projects I designed and implemented in the past years.",
-				"title": "Portfolio. Lara Amalia."
-			},
-			"projects": {
-				"feldenkraispraxis": {
-					"description": "concept, design & implementation, photography",
-					"link": "https://www.feldenkraispraxis.at/",
-					"technology": "static website (Next.js)",
-					"time": "2019/20",
-					"title": "Feldenkraispraxis"
-				},
-				"fuchzehnowe": {
-					"description": "app used to track all player's scores during a “fuchzehn owe” game | still work in progress",
-					"link": "https://fuchzehnowe.web.app/",
-					"technology": "React, Firestore",
-					"time": "2019/20",
-					"title": "fuchzehn owe"
-				},
-				"happyeating": {
-					"description": "concept, implementation",
-					"link": "http://happy-eating.at/",
-					"technology": "WordPress",
-					"time": "2016/17",
-					"title": "happy eating"
-				},
-				"pfusterer": {
-					"description": "implementation",
-					"link": "http://pfusterer.at/",
-					"technology": "WordPress",
-					"time": "2016",
-					"title": "design architektur pfusterer"
-				},
-				"play": {
-					"description": "concept, design & implementation",
-					"link": "http://www.play-orchester.at/",
-					"technology": "static website (Metalsmith)",
-					"time": "2014 - 2017",
-					"title": "PLAY Orchester"
-				},
-				"timesloth": {
-					"description": "design & implementation, product-illustrations",
-					"link": "https://www.timesloth.io/",
-					"technology": "static website (Next.js), Sketch",
-					"time": "2019/20",
-					"title": "TimeSloth"
-				}
-			},
-			"title": "Portfolio"
 		}
 	}
 }

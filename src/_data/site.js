@@ -33,9 +33,5 @@ module.exports = {
     metaTitle: "Lara Amalia. Web Entwicklerin & Musikerin.",
     metaDescription:
       "Hallo, ich bin Lara Amalia. Ich bin Web Entwicklerin am Tag und Musikerin bei Nacht.",
-  },
-  blog: {
-    title: "Blog. Lara Amalia. Web developer and musician.",
-    description: "A blog about web development basics and thoughts from a developer’s and musician’s life.",
   }
 };

@@ -1,11 +1,4 @@
 {
-	"blog": {
-		"meta": {
-			"description": "Hier schreibe ich über Web Development Grundlagen. Blog Artikel sind nur auf Englisch verfügbar.",
-			"title": "Blog. Lara Amalia."
-		},
-		"toOverview": "&laquo; zur Übersicht"
-	},
 	"common": {
 		"goToWebsite": "Website in neuem Tab öffnen",
 		"homeLink": "&laquo; Startseite",
@@ -15,6 +8,7 @@
 	"index": {
 		"contact": {
 			"header": "Wollen wir plaudern?",
+			"scale": "Alles zum Thema Web Entwicklung findest du hier:",
 			"text": "Du findest mich in Linz, <a href=\"https://twitter.com/lara_amalia\" target=\"_blank\" rel=\"noopener noreferrer\">auf Twitter</a> oder schick mir einfach ein E-Mail an <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>."
 		},
 		"greeting": "Hallo, ich bin<br>Lara Amalia",
@@ -44,17 +38,7 @@
 		},
 		"web": {
 			"header": "Ich bin Web Entwicklerin<br />am Tag…",
-			"headerLink": "portfolio &raquo;",
-			"intro": {
-				"header": "web entwicklerin",
-				"text1": "Meine ersten Websites habe ich mit Tabellen-Layouts und Framesets gebaut. Als Navigation gab es Image Maps.",
-				"text2": "Seither habe ich viel gelernt. Ich habe Medientechnik & -design (FH Hagenberg) und Computer Science (JKU Linz) studiert."
-			},
-			"nav": {
-				"cv": "lebenslauf",
-				"projects": "projekte"
-			},
-			"subHeader": "Mit 12 Jahren habe ich ein Buch über HTML gelesen und angefangen Websites zu bauen"
+			"headerLink": "portfolio &raquo;"
 		}
 	},
 	"music": {
@@ -85,105 +69,6 @@
 		"title": "Musik",
 		"upcoming": {
 			"header": "Anstehende Auftritte"
-		}
-	},
-	"web": {
-		"cv": {
-			"education": "Ausbildung",
-			"entries": {
-				"atikon": {
-					"company": "Atikon, Leonding",
-					"position": "Web Entwicklerin (Praktikum)",
-					"time": "März 2013 - Juni 2013"
-				},
-				"dynatrace": {
-					"company": "Dynatrace Austria, Linz",
-					"position": "Web developer, Design operations",
-					"time": "September 2016 - März 2020"
-				},
-				"fh": {
-					"company": "Fachhochschule Oberösterreich, Campus Hagenberg\n(FH Hagenberg)",
-					"position": "Lektorin (Webdesign & -programmierung)",
-					"time": "September 2018 - jetzt"
-				},
-				"holis": {
-					"company": "holis market, Linz",
-					"position": "Web Entwicklerin",
-					"time": "Februar 2015 - Jänner 2016"
-				},
-				"nachhilfe": {
-					"company": "IFL Linz, FH Hagenberg",
-					"position": "Mathematik-Nachhilfe",
-					"time": "August 2009 - Februar 2013"
-				},
-				"self": {
-					"company": "selbstständig",
-					"position": "Web Entwicklerin",
-					"time": "Februar 2015 - jetzt"
-				},
-				"studies": {
-					"mtd": "Medientechnik und -design"
-				}
-			},
-			"jobs": "Jobs",
-			"meta": {
-				"description": "Eine Liste an Jobs, die ich in den vergangenen Jahren gemacht habe.",
-				"title": "Lebenslauf"
-			}
-		},
-		"portfolio": {
-			"contact": "Du bist an meinen Arbeiten interessiert oder hast eine Projektidee, die du mit mir gemeinsam realisieren möchtest? Ich würde mich freuen, von dir zu hören!<br />\nSag einfach hallo: <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>",
-			"contactHeader": "lass uns zusammen arbeiten!",
-			"intro": "Ich baue gerne <strong>Dinge fürs Web</strong>. Ich bin interessiert an <strong>modernen Web-Technologien</strong> und habe ein gutes Gespür für <strong>UI und UX</strong>. Ich arbeite genau und schaue auf Details, verliere dabei aber nicht den Überblick. Wenn ich Websites oder Apps baue, spielen logische Inhaltsstrukturen, responsive Designs, Accessibility und Performance eine wichtige Rolle.",
-			"meta": {
-				"description": "Mach dir ein Bild meiner Web-Projekte, die ich in den vergangenen Jahren umgesetzt habe.",
-				"title": "Portfolio. Lara Amalia."
-			},
-			"projects": {
-				"feldenkraispraxis": {
-					"description": "Konzept, Design & Umsetzung, Fotografie",
-					"link": "https://www.feldenkraispraxis.at/",
-					"technology": "Statische Website (Next.js)",
-					"time": "2019/20",
-					"title": "Feldenkraispraxis"
-				},
-				"fuchzehnowe": {
-					"description": "App, um den Punktestand einer Partie „fuchzehn owe“ (Kartenspiel) zu notieren | noch in Arbeit",
-					"link": "https://fuchzehnowe.web.app/",
-					"technology": "React, Firestore",
-					"time": "2019/20",
-					"title": "fuchzehn owe"
-				},
-				"happyeating": {
-					"description": "Konzept, Umsetzung",
-					"link": "http://happy-eating.at/",
-					"technology": "WordPress",
-					"time": "2016/17",
-					"title": "happy eating"
-				},
-				"pfusterer": {
-					"description": "Umsetzung",
-					"link": "http://pfusterer.at/",
-					"technology": "WordPress",
-					"time": "2016",
-					"title": "design architektur pfusterer"
-				},
-				"play": {
-					"description": "Konzept, Design & Umsetzung",
-					"link": "http://www.play-orchester.at/",
-					"technology": "Statische Website (Metalsmith)",
-					"time": "2014 - 2017",
-					"title": "PLAY Orchester"
-				},
-				"timesloth": {
-					"description": "Design & Umsetzung, Produkt-Illustrationen",
-					"link": "https://www.timesloth.io/",
-					"technology": "Statische Website (Next.js), Sketch",
-					"time": "2019/20",
-					"title": "TimeSloth"
-				}
-			},
-			"title": "Portfolio"
 		}
 	}
 }
