@@ -8,7 +8,7 @@
 	"index": {
 		"contact": {
 			"header": "Wollen wir plaudern?",
-			"scale": "Alles zum Thema Web Entwicklung findest du hier:",
+			"scale": "Alles zum Thema Web Entwicklung findest du nun hier:",
 			"text": "Du findest mich in Linz, <a href=\"https://twitter.com/lara_amalia\" target=\"_blank\" rel=\"noopener noreferrer\">auf Twitter</a> oder schick mir einfach ein E-Mail an <a href=\"mailto:hallo@laraamalia.at\">hallo@laraamalia.at</a>."
 		},
 		"greeting": "Hallo, ich bin<br>Lara Amalia",
@@ -23,6 +23,11 @@
 			"sea": "Meine Lieblingsfarbe ist blau, vielleicht deswegen, weil ich ins Meer verliebt bin."
 		},
 		"music": {
+			"band": {
+				"header": "lara amalia und band",
+				"text1": "Gemeinsam mit drei leidenschaftlichen Musikern und guten Freunden habe ich 2020 begonnen, meine Songs für Band zu arrangieren. Wir hoffen, bald auch die ersten Live-Konzerte spielen zu können.",
+				"text2": "Bis es soweit ist, könnt ihr euch eine Wohnzimmer-Session ansehen, die wir im November aufgenommen haben:"
+			},
 			"header": "…und Musikerin<br />bei Nacht.",
 			"headerLink": "auftritte &raquo;",
 			"intro": {
