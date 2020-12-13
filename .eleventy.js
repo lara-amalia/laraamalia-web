@@ -1,12 +1,4 @@
-const markdownIt = require("markdown-it");
-const pluginRss = require('@11ty/eleventy-plugin-rss');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-
 module.exports = function (eleventyConfig) {
-  // Plugins
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(syntaxHighlight);
-
   // Template formats
   eleventyConfig.setTemplateFormats(["md", "njk"]);
 
@@ -19,12 +11,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "src/scripts/main.js": "scripts/main.js",
   });
-
-  const markdownLibrary = markdownIt({
-    html: true,
-    linkify: false,
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
     dir: {
