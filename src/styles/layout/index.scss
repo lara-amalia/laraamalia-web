@@ -1,22 +1,28 @@
+@import '../variables';
+
 .index-grid {
   position: relative;
   z-index: 5;
 }
 
 .music-intro,
-.web-intro,
+.band-intro,
 .misc-intro,
 .contact-info {
   padding: 1rem 2rem;
 }
 
-.music-subheader,
-.web-subheader {
+.music-subheader {
   padding: 1rem 2rem;
   width: 60%;
   margin-left: auto;
   margin-bottom: 0;
   text-align: right;
+}
+
+.img-lara-band {
+  position: relative;
+  padding: 2rem;
 }
 
 @media (min-width: $screen-md) {
@@ -44,14 +50,19 @@
     grid-row: 6 / span 4;
   }
 
-  .web-subheader {
-    grid-column: 6 / span 2;
-    grid-row: 13 / span 3;
-  }
-
-  .web-intro {
+  .band-intro {
     grid-column: 2 / span 3;
     grid-row: 14 / span 5;
+  }
+
+  .img-lara-band {
+    padding: 0;
+    grid-column: 6 / span 3;
+    grid-row: 15 / span 3;
+  }
+
+  .img-lara-band-bg {
+
   }
 
   .bg-blue-ingrid {
@@ -78,8 +89,8 @@
   }
 
   .music-intro,
-  .web-intro,
   .misc-intro,
+  .band-intro,
   .contact-info {
     padding: 0;
   }
@@ -91,8 +102,7 @@
     justify-content: space-between;
   }
 
-  .music-subheader,
-  .web-subheader {
+  .music-subheader {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -135,14 +145,14 @@
     grid-row: 8 / span 2;
   }
 
-  .web-subheader {
-    grid-column: 8 / span 2;
-    grid-row: 14 / span 2;
-  }
-
-  .web-intro {
+  .band-intro {
     grid-column: 3 / span 4;
     grid-row: 13 / span 3;
+  }
+
+  .img-lara-band {
+    grid-column: 9 / span 4;
+    grid-row: 14 / span 3;
   }
 
   .bg-blue-ingrid {

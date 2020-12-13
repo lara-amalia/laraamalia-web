@@ -23,6 +23,11 @@
 			"sea": "My favourite colour is blue, maybe that’s because I’m in love with the sea."
 		},
 		"music": {
+			"band": {
+				"header": "lara amalia and band",
+				"text1": "Together with three passionate musicians and good friends of mine, I started to arrange my songs for a band in 2020. We hope to be able to play some first live concerts soon.",
+				"text2": "Until then, you can watch a living room session we recorded in November:"
+			},
 			"header": "…and a musician<br />by night.",
 			"headerLink": "gigs &raquo;",
 			"intro": {
