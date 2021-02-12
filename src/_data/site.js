@@ -12,7 +12,6 @@ module.exports = {
   name: "Lara Amalia",
   twitter: "@lara_amalia",
   blogHome: 'blog',
-  gaId: isProduction ? 'UA-77552198-1' : undefined,
   en: {
     homePath: "/en/",
     alternateLangPathPrefix: "",
