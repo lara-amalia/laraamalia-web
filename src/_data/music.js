@@ -6,6 +6,13 @@ module.exports = {
   de,
   gigs: [
     {
+      date: "13.08.2021",
+      time: "20:00",
+      band: "Lara Amalia",
+      info: "Musikpavillon Linz",
+      link: "https://www.linztermine.at/event/701114",
+    },
+    {
       date: "10.10.2020",
       time: "19:30",
       band: "anders_chor",
