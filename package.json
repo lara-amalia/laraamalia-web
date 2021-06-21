@@ -13,8 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "concurrently": "^6.1.0",
+    "concurrently": "^6.2.0",
     "node-sass": "^6.0.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.1"
   }
 }
